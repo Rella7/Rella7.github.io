@@ -3,9 +3,6 @@
 <head>
   <meta charset="utf-8">
   
-  <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
@@ -15,144 +12,777 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" type="text/css" href="/./main.2d7529.css">
-  <style type="text/css">
   
-    #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
-    }
-  </style>
+    
   
-
+  <link rel="stylesheet" href="/css/style.css">
   
 
 </head>
 
 <body>
-  <div id="container" q-class="show:isCtnShow">
-    <canvas id="anm-canvas" class="anm-canvas"></canvas>
-    <div class="left-col" q-class="show:isShow">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    
+    <div id="header-inner" class="inner">
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">归档</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
       
-<div class="overlay" style="background: #4d4d4d"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			<img src="null" class="js-avatar">
-		</a>
-		<hgroup>
-		  <h1 class="header-author"><a href="/">Rella</a></h1>
-		</hgroup>
-		
-
-		<nav class="header-menu">
-			<ul>
-			
-				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/tags/随笔/">随笔</a></li>
-	        
-			</ul>
-		</nav>
-		<nav class="header-smart-menu">
-    		
-    			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
-    			
-            
-		</nav>
-		<nav class="header-nav">
-			<div class="social">
-				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
-			</div>
-		</nav>
-	</header>		
-</div>
-
     </div>
-    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
       
-<nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
-	<div class="btnctn js-mobile-btnctn">
-  		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
-	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-				<img src="null" class="js-avatar">
-			</div>
-			<hgroup>
-			  <h1 class="header-author js-header-author">Rella</h1>
-			</hgroup>
-			
-			
-			
-				
-			
-				
-			
-			
-			
-			<nav class="header-nav">
-				<div class="social">
-					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
-				</div>
-			</nav>
-
-			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
-				
-				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
-		        
-				</ul>
-			</nav>
-		</header>				
-	</div>
-	<div class="mobile-mask" style="display:none" q-show="isShow"></div>
-</nav>
-
-      <div id="wrapper" class="body-wrap">
-        <div class="menu-l">
-          <div class="canvas-wrap">
-            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
-          </div>
-          <div id="js-content" class="content-ll">
-            
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
   
-    <article id="post-01.H5one" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-04.C3-3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/25/04.C3-3/" class="article-date">
+  <time datetime="2017-01-25T10:42:19.280Z" itemprop="datePublished">2017-01-25</time>
+</a>
+    
+  </div>
   <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/25/04.C3-3/">CSS3第三天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <h1 id="图片边框"><a href="#图片边框" class="headerlink" title="图片边框"></a>图片边框</h1><blockquote>
+<p>在没有<code>border-image</code>属性之前,元素边框的设置就是各种不同分隔的点,当时当你掌握了这个属性以后,还是能够做出一些精美的效果的</p>
+</blockquote>
+<h2 id="完整写法"><a href="#完整写法" class="headerlink" title="完整写法"></a>完整写法</h2><blockquote>
+<p>同样隶属于<code>border家族</code>,<code>border-image</code>支持简写</p>
+</blockquote>
+<ul>
+<li>示例代码:</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">            <span class="attribute">border-image</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>) <span class="number">17</span> / <span class="number">17px</span> / <span class="number">17px</span> round;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<h2 id="组成属性"><a href="#组成属性" class="headerlink" title="组成属性"></a>组成属性</h2><table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>border-image-source</td>
+<td>图片路径(url)</td>
+</tr>
+<tr>
+<td>border-image-slice</td>
+<td>图片切片</td>
+</tr>
+<tr>
+<td>border-image-width</td>
+<td>图片宽度</td>
+</tr>
+<tr>
+<td>border-image-outset</td>
+<td>图片外凸</td>
+</tr>
+<tr>
+<td>border-image-repeat</td>
+<td>图片重复</td>
+</tr>
+</tbody>
+</table>
+<h3 id="border-image-source属性"><a href="#border-image-source属性" class="headerlink" title="border-image-source属性"></a>border-image-source属性</h3><ul>
+<li><p><strong>值:</strong></p>
+<ul>
+<li>none或者url(“地址”)</li>
+<li>默认值为:none</li>
+<li>作用:图片路径</li>
+</ul>
+</li>
+<li><p><strong>示例代码:</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">            <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>);</div><div class="line">            &#125;</div><div class="line">            <span class="comment">/*如果只是单纯的设置该属性,真的很难看*/</span></div></pre></td></tr></table></figure>
+<h3 id="border-image-slice属性"><a href="#border-image-slice属性" class="headerlink" title="border-image-slice属性"></a>border-image-slice属性</h3><ul>
+<li><p><strong>值:</strong></p>
+<ul>
+<li>1-4个值(不需要单位),对应的关系跟margin一致</li>
+<li>1-4个百分比,对应的关系跟margin一致</li>
+<li>fill(可选):是否需要中间的区域</li>
+<li>作用:设置图片的切片大小</li>
+</ul>
+</li>
+<li><p><strong>示例代码:</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">          <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>);</div><div class="line">          <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<p>![QQ截图20160606164142.png-22.8kB][2]</p>
+<ul>
+<li><strong>工作原理:</strong><ul>
+<li>这个属性设置了以后就能够看到效果了,这里我们用这样图片作为演示<br></li>
+</ul>
+</li>
+</ul>
+<p>![border.png-0.8kB][3]</p>
+<ul>
+<li>我们设置的值,相当于将这张图片切割为<code>九宫格</code>,这张图片的分辨率为<code>81*81</code> 其中<code>81=27*3</code></li>
+<li>九宫格切法为<br></li>
+</ul>
+<p>![border-image-slice.gif-2kB][4]</p>
+<ul>
+<li>当我们使用图片设置为边框时<ul>
+<li>保证四个角不变,根据图片的拉伸效果进行改变</li>
+</ul>
+</li>
+</ul>
+<p>![border-image-slice.png-10.6kB][5]<br>​    </p>
+<ul>
+<li><strong>注:</strong>如果使用的是百分比,那么切割的时候就是按照总宽度的百分比来计算,其他的都是一致的</li>
+</ul>
+<h3 id="border-image-width属性"><a href="#border-image-width属性" class="headerlink" title="border-image-width属性"></a>border-image-width属性</h3><ul>
+<li><strong>值:</strong><ul>
+<li>可选</li>
+<li>1-4个值,单位为(px,em,%),对应关系跟<code>margin</code>一致</li>
+<li>设置图片边框的宽度</li>
+<li>设置了宽度以后,以该宽度为准</li>
+<li>作用:设置图片边框的宽度</li>
+<li><strong>注:</strong><ul>
+<li>在<code>chrome</code>中使用有异常,如果不设置<code>border</code>的宽度,就无法使用该属性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="border-image-outset属性"><a href="#border-image-outset属性" class="headerlink" title="border-image-outset属性"></a>border-image-outset属性</h3><ul>
+<li><p><strong>值:</strong></p>
+<ul>
+<li>1-4个值,单位为(px,em,%),对应关系跟<code>margin</code>一致</li>
+<li>作用:设置图片边框的向外延伸的值</li>
+<li><strong>注:</strong><ul>
+<li>不能为负值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>示例代码:</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">       <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border.png"</span>);</div><div class="line">       <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">       <span class="attribute">border-image-width</span>: <span class="number">27px</span>;</div><div class="line">       <span class="attribute">border-image-outset</span>: <span class="number">27px</span>;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<p><img src="img/20140926151238.png" alt=""></p>
+<h3 id="border-image-repeat属性"><a href="#border-image-repeat属性" class="headerlink" title="border-image-repeat属性"></a>border-image-repeat属性</h3><ul>
+<li><strong>值:</strong><ul>
+<li>stretch(拉伸默认) 或 repeat(重复) 或 round(环绕)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>示例代码:</strong></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">           <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border.png"</span>);</div><div class="line">           <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">           <span class="attribute">border-image-width</span>: <span class="number">27px</span>;</div><div class="line">           <span class="attribute">border-image-outset</span>: <span class="number">27px</span>;</div><div class="line">           <span class="comment">/*border-image-repeat: repeat;*/</span></div><div class="line">           <span class="attribute">border-image-repeat</span>: stretch;</div><div class="line">           <span class="comment">/*border-image-repeat: round;*/</span></div><div class="line">       &#125;</div></pre></td></tr></table></figure>
+<h1 id="body高度问题"><a href="#body高度问题" class="headerlink" title="body高度问题"></a>body高度问题</h1><blockquote>
+<p><code>body</code>标签其实是一个盒子,但是我们一般很少直接使用它</p>
+</blockquote>
+<h2 id="body的高度"><a href="#body的高度" class="headerlink" title="body的高度"></a>body的高度</h2><ul>
+<li><p><strong>注意:</strong></p>
+<ul>
+<li>当我们设置了<code>body</code>的背景颜色时,整个页面都有效果</li>
+<li>但是当我们为其添加了<code>border</code>属性时,会发现他其实是根据内容改变的大小</li>
+</ul>
+</li>
+<li><p>body高度设置:  </p>
+<ul>
+<li><code>body</code>的本质就是一个<code>div</code> </li>
+<li>可以直接通过<code>height</code>设置他的高度</li>
+<li>默认会根据内容变高</li>
+</ul>
+</li>
+<li><p><strong>示例代码</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span>&#123;</div><div class="line">    <span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#0094f</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="设置跟浏览器显示区域高度一致"><a href="#设置跟浏览器显示区域高度一致" class="headerlink" title="设置跟浏览器显示区域高度一致"></a>设置跟浏览器显示区域高度一致</h2><ul>
+<li><p><strong>百分比高度</strong></p>
+<ul>
+<li>如果父盒子有高度,我们可以设置<code>height</code>属性为<code>100%</code>实现跟父盒子高度一致</li>
+<li>如果直接设置<code>body</code>的高度为<code>100%</code>是没有效果的</li>
+</ul>
+</li>
+<li><p>html标签高度</p>
+<ul>
+<li>如果设置了<code>html</code>的边框,我们发现其实他是套在<code>body</code>外部的一个盒子,所以如果想要全屏显示 我们可以设置<code>html</code>标签的高度为<code>100%</code> </li>
+</ul>
+</li>
+<li><p><strong>示例代码:</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span>&#123;</div><div class="line">			<span class="attribute">border</span>:<span class="number">1px</span> solid orange;</div><div class="line">			<span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">	&#125;</div><div class="line"><span class="selector-tag">body</span>&#123;</div><div class="line">			<span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">			<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#0094ff</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h1 id="transform-赋值先后问题"><a href="#transform-赋值先后问题" class="headerlink" title="transform 赋值先后问题"></a>transform 赋值先后问题</h1><h2 id="transform属性赋值方法"><a href="#transform属性赋值方法" class="headerlink" title="transform属性赋值方法"></a>transform属性赋值方法</h2><ul>
+<li>css语法<ul>
+<li>当我们要为元素添加多个值时,直接通过空格可以进行间隔 </li>
+<li>会先执行 第一个 然后依次往后</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">div:nth-child(1)&#123;</div><div class="line">    // 先选转,然后移动</div><div class="line">    transform:roatate(45deg) translate(100px,0):</div><div class="line"> </div><div class="line">&#125;</div><div class="line">div:nth-child(2)&#123;</div><div class="line">   // 先移动 然后先选转</div><div class="line">     transform:translate(100px,0) roatate(45deg) :</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="transform-3d"><a href="#transform-3d" class="headerlink" title="transform_3d"></a>transform_3d</h1><blockquote>
+<p>对应的属性值依旧是<code>transform</code>,只是多了一个<code>Z轴</code>而已,需要一定的空间想象能力</p>
+</blockquote>
+<h2 id="坐标轴"><a href="#坐标轴" class="headerlink" title="坐标轴"></a>坐标轴</h2><ul>
+<li>其中Z轴垂直于屏幕往里<br> ![图片1.png-133.8kB][2]</li>
+</ul>
+<ul>
+<li>也可以通过左手坐标系来查找这几个轴<br>![图片2.png-111.1kB][3]</li>
+</ul>
+<h2 id="3d旋转"><a href="#3d旋转" class="headerlink" title="3d旋转"></a>3d旋转</h2><blockquote>
+<p>当明确了三个坐标轴以后,我们就能够对元素进行<code>3d</code>方向上的旋转了</p>
+</blockquote>
+<ul>
+<li><p>左手定则</p>
+<ul>
+<li>大拇指指向旋转轴的正方向,其余四指<code>弯曲的方向</code>就是旋转的方向</li>
+</ul>
+</li>
+<li><p>语法</p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* x方向旋转180°*/</span></div><div class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:rotateX(180deg)</span></div><div class="line"><span class="comment">/* y方向旋转180°*/</span></div><div class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:rotateY(180deg)</span></div><div class="line"><span class="comment">/* z方向旋转180°*/</span></div><div class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:rotateZ(180deg)</span></div></pre></td></tr></table></figure>
+<h2 id="视角"><a href="#视角" class="headerlink" title="视角"></a>视角</h2><blockquote>
+<p><code>perspective(透视,视角)</code>这个属性需要一定的<code>空间想象能力</code>,其实就是离我们近的一端看起来<code>大一点</code></p>
+</blockquote>
+<p>![image_1an3qfb301unh1tuf17271jr6fi611.png-7kB][4]<br>​    </p>
+<ul>
+<li>语法:</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*直接添加给transform:标签 距离 显示屏 1000px*/</span></div><div class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:perspective(1000px)</span></div><div class="line"></div><div class="line"><span class="comment">/*直接使用perspective 属性赋值:标签 距离 显示屏 1000px*/</span></div><div class="line"><span class="selector-tag">perspective</span><span class="selector-pseudo">:1000px</span></div></pre></td></tr></table></figure>
+<ul>
+<li>解释:<ul>
+<li>这个属性的理解 需要配合<code>transformZ()</code></li>
+<li>设置了<code>perspective</code>属性假定为<code>1000px</code></li>
+<li>当我们使用<code>transformZ()</code>移动1000px时,会发现标签消失了,也就意味着,移出了 显示屏 <code>空间想象</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>默认Y轴旋转45°<br>![image_1an3r1ad9fqh1s3511m21ge3rqs1r.png-7.5kB][5]</p>
+</li>
+<li><p>透视 Y轴旋转45°<br>![image_1an3r1rtdqs17epmj5an416r79.png-8.7kB][6]</p>
+</li>
+</ul>
+<ul>
+<li>使用注意:<ul>
+<li>虽然可以直接添加给元素本身,但是建议添加到不进行变换的<code>父容器</code>中</li>
+</ul>
+</li>
+</ul>
+<h2 id="视角方向-perspective-origin"><a href="#视角方向-perspective-origin" class="headerlink" title="视角方向(perspective-origin)"></a>视角方向(perspective-origin)</h2><blockquote>
+<p>默认我们是直直的看着屏幕,通过该属性可以修改查看屏幕的角度,需要一定的<code>空间想象能力</code>,可以<strong>先不使用</strong></p>
+</blockquote>
+<ul>
+<li><p>默认视角<br>![image_1an3r8bpk1rg31rgo7m51bqvnvnm.png-15kB][7]</p>
+</li>
+<li><p>修改之后</p>
+</li>
+</ul>
+<p>![image_1an3rclse8dah178f2kln16jq13.png-21.4kB][8]</p>
+<h2 id="变换样式-transform-style"><a href="#变换样式-transform-style" class="headerlink" title="变换样式(transform-style)"></a>变换样式(transform-style)</h2><blockquote>
+<p>在使用<code>3d</code>进行页面元素设置时,需要配合<code>transform-style</code>才能够实现完美的3d效果</p>
+</blockquote>
+<ul>
+<li><p>默认值(旋转中)</p>
+<pre><code>![image_1an3rj09o1rcq1it1v5a1pm687s1g.png-316.9kB][9]
+</code></pre></li>
+<li><p>修改为3d</p>
+<pre><code>![image_1an3rk2il1n2o6is195a14bgcql1t.png-467.9kB][10]
+</code></pre></li>
+<li><p><strong>使用注意:</strong></p>
+<ul>
+<li>该属性 需要添加到 <code>3d变换</code>的父容器上</li>
+</ul>
+</li>
+</ul>
+<h1 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h1><blockquote>
+<p>使用过度,可以实现绝大多数的效果,但是需要对效果进行定制时,可以通过<code>动画animation</code>来实现</p>
+</blockquote>
+<h2 id="过渡的优缺点"><a href="#过渡的优缺点" class="headerlink" title="过渡的优缺点"></a>过渡的优缺点</h2><ul>
+<li>transition的优点在于简单易用，但是它有几个很大的局限。</li>
+</ul>
+<ol>
+<li>transition需要事件触发，所以没法在网页加载时自动发生。</li>
+<li>transition是一次性的，不能重复发生，除非一再触发。</li>
+<li>transition只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态。</li>
+<li>一条transition规则，只能定义一个属性的变化，不能涉及多个属性。<br><code>CSS Animation</code>就是为了解决这些问题而提出的。</li>
+</ol>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><blockquote>
+<p>使用动画时,我们首先需要定义一组动画,在动画过程中我们可以对动画的步骤进行控制</p>
+</blockquote>
+<ul>
+<li><p>定义动画:<br>  使用<code>@keyFrames 关键字定义</code> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*动画名为:sevenColor</span></div><div class="line">    开始背景为红色</div><div class="line">    中途背景为橘色</div><div class="line">    结束为黄色</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> changeColor&#123;</div><div class="line">			0%&#123;<span class="attribute">background-color</span>:red;&#125;</div><div class="line">			50%&#123;<span class="attribute">background-color</span>:orange;&#125;</div><div class="line">			100%&#123;<span class="attribute">background-color</span>:yellow;&#125;</div><div class="line">&#125;    </div><div class="line"></div><div class="line"><span class="comment">/*动画名为:changeColor</span></div><div class="line">   效果跟上面的一样,只是使用关键字</div><div class="line">   from 开始</div><div class="line">   to 结束</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> sevenColor&#123;</div><div class="line">			<span class="selector-tag">from</span>&#123;<span class="attribute">background-color</span>:red;&#125;</div><div class="line">			50%&#123;<span class="attribute">background-color</span>:orange;&#125;</div><div class="line">			<span class="selector-tag">to</span>&#123;<span class="attribute">background-color</span>:yellow;&#125;</div><div class="line">&#125;   </div><div class="line"></div><div class="line"><span class="comment">/*动画名为:someProperty</span></div><div class="line">   效果跟上面的一样,只是使用关键字</div><div class="line">    添加了多个属性</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> someProperty&#123;</div><div class="line">			<span class="selector-tag">from</span>&#123;</div><div class="line">			    <span class="attribute">background-color</span>:red;</div><div class="line">			    <span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">			&#125;</div><div class="line">			50%&#123;</div><div class="line">			    <span class="attribute">background-color</span>:orange;</div><div class="line">			    <span class="attribute">transform</span>:<span class="built_in">rotate</span>(100deg);</div><div class="line">			&#125;</div><div class="line">			<span class="selector-tag">to</span>&#123;</div><div class="line">			    <span class="attribute">background-color</span>:yellow;</div><div class="line">			    <span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">			&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用动画<br>  动画的使用 需要通过<code>animation</code>这个属性,他是一个复合属性,但是再添加子属性时,除<code>时间外</code>,顺序可以打乱</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">	/* 完整属性</div><div class="line">	动画名</div><div class="line">	animation-name: sevenColor;	</div><div class="line">	持续时间</div><div class="line">	animation-duration: 1s;</div><div class="line">    动画播放完毕时的状态 (还原,结束值)</div><div class="line">    animation-fill-mode: forwards;</div><div class="line">    延迟时间</div><div class="line">    animation-delay: 1s;</div><div class="line">    动画次数(具体次数,或者无限次)</div><div class="line">    animation-iteration-count: infinite;</div><div class="line">    动画的播放过渡类型</div><div class="line">    animation-timing-function: ease-in;</div><div class="line">    动画状态 running 或者pause</div><div class="line">    animation-play-state: running;</div><div class="line">    动画的方向 正向 方向 正方,反向交替 方向,正向交替</div><div class="line">        比如 动画为 大-小</div><div class="line">            交替:大-小-大</div><div class="line">	animation-direction: alternate;</div><div class="line">			*/</div><div class="line">/* 复合写法 </div><div class="line">    保证 第一个时间 是动画时间</div><div class="line">        第二个时间 是延迟时间</div><div class="line">        其余属性的位置可以任意写</div><div class="line">        animationName 是动画名称的意思</div><div class="line">*/</div><div class="line"> </div><div class="line">    animation: animationName 1s infinite  ease-in forwards 1s;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="web字体-图标"><a href="#web字体-图标" class="headerlink" title="web字体,图标"></a>web字体,图标</h1><blockquote>
+<p>当我们发现现有的字体,图标无法满足我们时,除了可以通过美工获取,也能够通过互联网获取资源</p>
+</blockquote>
+<h2 id="常见字体格式"><a href="#常见字体格式" class="headerlink" title="常见字体格式:"></a>常见字体格式:</h2><ul>
+<li>TureTpe(.ttf)格式<ul>
+<li>.ttf字体是Windows和Mac的最常见的字体，是一种RAW格式，支持这种字体的浏览器有IE9+、Firefox3.5+、Chrome4+、Safari3+、Opera10+、iOS Mobile、Safari4.2+；<br><br></li>
+</ul>
+</li>
+<li><p>OpenType(.otf)格式</p>
+<ul>
+<li>.otf字体被认为是一种原始的字体格式，其内置在TureType的基础上，支持这种字体的浏览器有Firefox3.5+、Chrome4.0+、Safari3.1+、Opera10.0+、iOS Mobile、Safari4.2+<br><br> </li>
+</ul>
+</li>
+<li><p>Web Open Font Format(.woff)格式</p>
+<ul>
+<li>woff字体是Web字体中最佳格式，他是一个开放的TrueType/OpenType的压缩版本，同时也支持元数据包的分离，支持这种字体的浏览器有IE9+、Firefox3.5+、Chrome6+、Safari3.6+、Opera11.1+<br><br></li>
+</ul>
+</li>
+<li>Embedded Open Type(.eot)格式<ul>
+<li>.eot字体是IE专用字体，可以从TrueType创建此格式字体，支持这种字体的浏览器有IE4+<br><br></li>
+</ul>
+</li>
+<li>SVG(.svg)格式<ul>
+<li>.svg字体是基于SVG字体渲染的一种格式，支持这种字体的浏览器有Chrome4+、Safari3.1+、Opera10.0+、iOS Mobile Safari3.2+ </li>
+</ul>
+</li>
+</ul>
+<h2 id="web字体"><a href="#web字体" class="headerlink" title="web字体"></a>web字体</h2><blockquote>
+<p>顾名思义 就是使用网上的字体,一般在页面上需要部分使用特殊字体时使用</p>
+</blockquote>
+<ul>
+<li>获取网址(包括,但不仅限于此):<ul>
+<li>[iconfont][2] </li>
+<li>[有字库][3]</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>使用方式:<ul>
+<li>不同的网站的字体使用可能会略有不同,直接查看网站使用步骤即可 </li>
+</ul>
+</li>
+</ul>
+<h1 id="web图标"><a href="#web图标" class="headerlink" title="web图标"></a>web图标</h1><blockquote>
+<p>类似于web字体,web图标是使用网络资源来实现一些简单的图标,避免使用图片进行设置</p>
+</blockquote>
+<ul>
+<li><p>获取网址(包括,但不仅限于此):</p>
+<ul>
+<li>[iconfont][4] </li>
+<li>[fontastic][5]<ul>
+<li>账号:haoyuexing@gmail.com</li>
+<li>密码:haoyuexing</li>
+<li>自己用就好</li>
+</ul>
+</li>
+<li>[免费web图标][6]</li>
+</ul>
+</li>
+<li><p><strong>使用方式:</strong></p>
+<ul>
+<li>本质就是字体的替换</li>
+<li>不同的网站的字体图标使用可能会略有不同,直接查看网站使用步骤即可 </li>
+</ul>
+</li>
+</ul>
+<h1 id="兼容性查询"><a href="#兼容性查询" class="headerlink" title="兼容性查询"></a>兼容性查询</h1><blockquote>
+<p>我们可以通过帮助手册查询CSS3的兼容性问题,也能够通过网站<code>caniuse</code>进行查询</p>
+</blockquote>
+<ul>
+<li><p>地址如下:<br>  [caniuse][2]</p>
+</li>
+<li><p>使用方式:</p>
+<ul>
+<li>输入希望查询的样式:比如<code>border-image</code></li>
+<li>属性名正确的情况下,可以找到对应的CSS样式</li>
+<li>查看<code>红色</code>不可用,<code>绿色</code>可用,<code>青色</code>的为需要注意</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/01/25/04.C3-3/" data-id="ciycuuhri0001a4wmkjgohv18" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-03.C3-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/25/03.C3-2/" class="article-date">
+  <time datetime="2017-01-25T10:42:19.277Z" itemprop="datePublished">2017-01-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <h1 id="C3第二天"><a href="#C3第二天" class="headerlink" title="C3第二天"></a>C3第二天</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><blockquote>
+<p>在<code>CSS3</code>中针对<code>Background</code>推出了多个新增的用法,接下来我们看看这些新的属性</p>
+<h3 id="新增属性"><a href="#新增属性" class="headerlink" title="新增属性"></a>新增属性</h3><p>部分是有修改的,部分是新增的,其中CSS3中新增了很多好用的属性</p>
+</blockquote>
+<p><img src="imgs/image_bg.png" alt="backGroundCSS3新增属性"></p>
+<h4 id="backGround-clip"><a href="#backGround-clip" class="headerlink" title="backGround-clip:"></a><strong>backGround-clip:</strong></h4><pre><code>* 将背景设置好后,通过这个属性可以把多余的背景切掉
+</code></pre><h4 id="background-size"><a href="#background-size" class="headerlink" title="background-size"></a><strong>background-size</strong></h4><pre><code>* 设置背景的大小,通过这个属性可以使用多张图片作为背景,关于如何设置多张图片,可以查看`多重背景`
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">/* 宽度10 高度根据宽度计算 */</div><div class="line">background-size: 10px;</div><div class="line">/* 宽度10 高度 10 */</div><div class="line">background-size: 10px 10px;</div><div class="line">/* 背景图片原始大小 */</div><div class="line">background-size: auto;</div><div class="line">/* 背景图片原比例缩放到完全填满 可能会超出 */</div><div class="line">background-size: cover;</div><div class="line">/* 背景图片原比例缩放到 高度 或者宽度 跟容器一样 可能会有空白 */</div><div class="line">background-size: contain;</div></pre></td></tr></table></figure>
+<h4 id="background-repeat"><a href="#background-repeat" class="headerlink" title="background-repeat"></a><strong>background-repeat</strong></h4><pre><code>* 在原来只能设置平铺,不平铺的基础上,增加了两个属性,让我们在设置背景图时更为灵活
+* **示例:**
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/* 自动缩放 直到填满 */</div><div class="line">background-repeat:round;</div><div class="line">/* 两个方法都缩放,直到某一边充满容器为止 */</div><div class="line">background-repeat:space;</div></pre></td></tr></table></figure>
+<h4 id="background-size-1"><a href="#background-size-1" class="headerlink" title="background-size"></a>background-size</h4><blockquote>
+<p>设置图片大小,顾名思义就是图片大小而已</p>
+</blockquote>
+<h4 id="background-origin"><a href="#background-origin" class="headerlink" title="background-origin"></a>background-origin</h4><blockquote>
+<p>这个属性设置的是背景图片开始的位置</p>
+</blockquote>
+<ul>
+<li><p><strong>核心代码如下:</strong><br>下面只列举了div的样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">			<span class="attribute">background-image</span>:<span class="built_in">url</span>(<span class="string">'img/01.jpg'</span>);</div><div class="line">			<span class="attribute">background-repeat</span>: no-repeat;</div><div class="line">			<span class="attribute">background-size</span>: <span class="number">50px</span> <span class="number">50px</span>;</div><div class="line">			<span class="attribute">background-origin</span>:可选值为border-box,padding-box,content-box</div><div class="line">			                </div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>border-box:</strong> 从边线开始</p>
+</li>
+</ul>
+<p><img src="imgs/image_bg1.png" alt="border-box"></p>
+<ul>
+<li><strong>padding-box</strong> 从padding开始</li>
+</ul>
+<p><img src="imgs/image_bg2.png" alt="padding-box"></p>
+<ul>
+<li><strong>content-box</strong> 从内容开始</li>
+</ul>
+<p><img src="imgs/image_bg3.png" alt="content-box"></p>
+<h2 id="多重背景"><a href="#多重背景" class="headerlink" title="多重背景"></a>多重背景</h2><blockquote>
+<p><code>background</code>这个属性在CSS1中就推出了，在CSS3中经过修改，可以通过<code>逗号,</code>的方式添加多个背景。</p>
+</blockquote>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><blockquote>
+<p><code>background</code>是复合属性,可以添加多个值,编写的时候需要注意顺序</p>
+</blockquote>
+<ul>
+<li>语法:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">/* 复合写法 */</div><div class="line">background:url(图片地址) 填充方式 固定方式 位置/大小 显示原点 裁剪位置 背景颜色.</div><div class="line"></div><div class="line"></div><div class="line">/* 多图片 使用逗号分隔*/</div><div class="line">background:图片1,</div><div class="line">           图片2,</div><div class="line">           图片3.</div><div class="line">           </div><div class="line">/* 具体代码 */</div><div class="line">background: url(&apos;image/01.jpg&apos;) no-repeat  200px 300px,</div><div class="line">			url(&apos;image/02.jpg&apos;) no-repeat  100px 200px/100px 100px;</div></pre></td></tr></table></figure>
+<h2 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h2><blockquote>
+<p>注意渐变产生的是<code>图像</code>,换句话来说,所有可以设置<code>图像</code>的地方都能够使用它,能够减少我们页面图片的使用,兼容性不错.</p>
+</blockquote>
+<h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><blockquote>
+<p>顾名思义,就是朝着某个方向发生进行渐变</p>
+</blockquote>
+<ul>
+<li><strong>语法:</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">/*语法组合方式 可以添加多个颜色*/</div><div class="line">background-image: linear-gradient(方向,开始颜色 开始位置 ,颜色2 开始位置,颜色3 开始位置.....);</div><div class="line"></div><div class="line"></div><div class="line">/* 具体代码  */</div><div class="line">/* 朝着 右上角 从红色到黄色*/</div><div class="line">background-image: linear-gradient(to top left,red,yellow);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 从红色到黄色*/</div><div class="line">background-image: linear-gradient(45deg,red,yellow);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色,黄色,绿色*/</div><div class="line">background-image: linear-gradient(45deg,red,yellow,green);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色到 10px结束 黄色从 20px开始 */</div><div class="line">background-image: linear-gradient(45deg,red 10px,yellow 20px);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色到10%结束 黄色从 20%开始 */</div><div class="line">background-image: linear-gradient(45deg,red 10%,yellow 20%);</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>注意:</strong><ul>
+<li>如果上一个颜色的结束,跟下一个颜色的开始相等,那么不会出现过度</li>
+<li>比如:</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">background-image: linear-gradient(45deg,red 10%,yellow 10%);</div></pre></td></tr></table></figure>
+<h3 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h3><blockquote>
+<p>指的是以某个点作为圆心,向四周扩散的渐变</p>
+</blockquote>
+<ul>
+<li><strong>语法:</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">/* 圆形渐变写法 */</div><div class="line">background:radial-gradient(半径  ,颜色1,颜色2等等);</div><div class="line"></div><div class="line">/* 椭圆渐变写法 */</div><div class="line">background:radial-gradient(横向半径,竖向半径  ,颜色1,颜色2等等);</div><div class="line"></div><div class="line">/* 设置位置 */</div><div class="line">background:radial-gradient(横向半径,竖向半径  at 位置,颜色1,颜色2等等);</div><div class="line"></div><div class="line">/*具体代码*/</div><div class="line">/*半径100px 红色 绿色*/</div><div class="line">background:radial-gradient(100px,red,green);</div><div class="line"></div><div class="line">/*横向半径100px 竖向半径200px 红色 绿色*/</div><div class="line">background:radial-gradient(100px 200px,red,green);</div><div class="line"></div><div class="line">/*横向半径100px  红色10px 绿色 20px*/</div><div class="line">background:radial-gradient(100px 200px,red 10px,green 20px);</div><div class="line"></div><div class="line">/*横向半径100px  红色10% 绿色20%*/</div><div class="line">background:radial-gradient(100px 200px,red 10%,green 10%);</div><div class="line"></div><div class="line">/*横向半径100px  红色10% 绿色20% 在100px 100px位置*/</div><div class="line">background:radial-gradient(100px 200px at 100px 100px,red 10%,green 10%);</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>注意:</strong><ul>
+<li>跟线性渐变一样如果上一个颜色的结束,跟下一个颜色的开始相等,那么不会出现过度</li>
+<li>比如:</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">background-image: radial-gradient(100px,red 10%,yellow 10%);</div></pre></td></tr></table></figure>
+<h2 id="图片边框"><a href="#图片边框" class="headerlink" title="图片边框"></a>图片边框</h2><blockquote>
+<p>在没有<code>border-image</code>属性之前,元素边框的设置就是各种不同分隔的点,但是当你掌握了这个属性以后,还是能够做出一些精美的效果的</p>
+</blockquote>
+<h3 id="完整写法"><a href="#完整写法" class="headerlink" title="完整写法"></a>完整写法</h3><blockquote>
+<p>同样隶属于<code>border家族</code>,<code>border-image</code>支持简写</p>
+</blockquote>
+<ul>
+<li>示例代码:</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">            <span class="attribute">border-image</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>) <span class="number">17</span> / <span class="number">17px</span> / <span class="number">17px</span> round;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<h3 id="组成属性"><a href="#组成属性" class="headerlink" title="组成属性"></a>组成属性</h3><table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>border-image-source</td>
+<td>图片路径(url)</td>
+</tr>
+<tr>
+<td>border-image-slice</td>
+<td>图片切片</td>
+</tr>
+<tr>
+<td>border-image-width</td>
+<td>图片宽度</td>
+</tr>
+<tr>
+<td>border-image-outset</td>
+<td>图片外凸</td>
+</tr>
+<tr>
+<td>border-image-repeat</td>
+<td>图片重复</td>
+</tr>
+</tbody>
+</table>
+<h4 id="border-image-source属性"><a href="#border-image-source属性" class="headerlink" title="border-image-source属性"></a>border-image-source属性</h4><ul>
+<li><p><strong>值:</strong></p>
+<ul>
+<li>none或者url(“地址”)</li>
+<li>默认值为:none</li>
+<li>作用:图片路径</li>
+</ul>
+</li>
+<li><p><strong>示例代码:</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">            <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>);</div><div class="line">            &#125;</div><div class="line">            <span class="comment">/*如果只是单纯的设置该属性,真的很难看*/</span></div></pre></td></tr></table></figure>
+<h4 id="border-image-slice属性"><a href="#border-image-slice属性" class="headerlink" title="border-image-slice属性"></a>border-image-slice属性</h4><ul>
+<li><p><strong>值:</strong></p>
+<ul>
+<li>1-4个值(不需要单位),对应的关系跟margin一致</li>
+<li>1-4个百分比,对应的关系跟margin一致</li>
+<li>fill(可选):是否需要中间的区域</li>
+<li>作用:设置图片的切片大小</li>
+</ul>
+</li>
+<li><p><strong>示例代码:</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">          <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>);</div><div class="line">          <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>工作原理:</strong><ul>
+<li>这个属性设置了以后就能够看到效果了,这里我们用这样图片作为演示<br></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>我们设置的值,相当于将这张图片切割为<code>九宫格</code>,这张图片的分辨率为<code>81*81</code> 其中<code>81=27*3</code></li>
+<li>九宫格切法为<br></li>
+</ul>
+<ul>
+<li>当我们使用图片设置为边框时<ul>
+<li>保证四个角不变,根据图片的拉伸效果进行改变</li>
+</ul>
+</li>
+</ul>
+<p>​    </p>
+<ul>
+<li><strong>注:</strong>如果使用的是百分比,那么切割的时候就是按照总宽度的百分比来计算,其他的都是一致的</li>
+</ul>
+<h4 id="border-image-width属性"><a href="#border-image-width属性" class="headerlink" title="border-image-width属性"></a>border-image-width属性</h4><ul>
+<li><strong>值:</strong><ul>
+<li>可选</li>
+<li>1-4个值,单位为(px,em,%),对应关系跟<code>margin</code>一致</li>
+<li>设置图片边框的宽度</li>
+<li>设置了宽度以后,以该宽度为准</li>
+<li>作用:设置图片边框的宽度</li>
+<li><strong>注:</strong><ul>
+<li>在<code>chrome</code>中使用有异常,如果不设置<code>border</code>的宽度,就无法使用该属性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="border-image-outset属性"><a href="#border-image-outset属性" class="headerlink" title="border-image-outset属性"></a>border-image-outset属性</h4><ul>
+<li><p><strong>值:</strong></p>
+<ul>
+<li>1-4个值,单位为(px,em,%),对应关系跟<code>margin</code>一致</li>
+<li>作用:设置图片边框的向外延伸的值</li>
+<li><strong>注:</strong><ul>
+<li>不能为负值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>示例代码:</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">       <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border.png"</span>);</div><div class="line">       <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">       <span class="attribute">border-image-width</span>: <span class="number">27px</span>;</div><div class="line">       <span class="attribute">border-image-outset</span>: <span class="number">27px</span>;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<h4 id="border-image-repeat属性"><a href="#border-image-repeat属性" class="headerlink" title="border-image-repeat属性"></a>border-image-repeat属性</h4><ul>
+<li><strong>值:</strong><ul>
+<li>stretch(拉伸默认) 或 repeat(重复) 或 round(环绕)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>示例代码:</strong></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">           <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border.png"</span>);</div><div class="line">           <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">           <span class="attribute">border-image-width</span>: <span class="number">27px</span>;</div><div class="line">           <span class="attribute">border-image-outset</span>: <span class="number">27px</span>;</div><div class="line">           <span class="comment">/*border-image-repeat: repeat;*/</span></div><div class="line">           <span class="attribute">border-image-repeat</span>: stretch;</div><div class="line">           <span class="comment">/*border-image-repeat: round;*/</span></div><div class="line">       &#125;</div></pre></td></tr></table></figure>
+<h2 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h2><blockquote>
+<p>CSS3中最让人激动的属性之一,基本上可以实现<code>所有</code>CSS属性的动画效果</p>
+</blockquote>
+<h3 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h3><blockquote>
+<p>帧动画的本质其实就是画面一张张的切换,由于速度关系,肉眼分辨不出,所以看起来就是连续的画面,<code>transition</code>干的,其实就是类似的事情<br>![图片1.png-186.2kB][2]</p>
+</blockquote>
+<ul>
+<li><strong>语法:</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">/*语法组合方式*/</div><div class="line">transition:过渡CSS属性 持续时间 动画方式 延迟时间;</div><div class="line"></div><div class="line">/* 多属性过渡组合写法  通过逗号分隔*/</div><div class="line">transition:过渡1,过渡2....</div><div class="line"></div><div class="line">/*具体代码*/</div><div class="line"></div><div class="line">/* 所有属性 1s动画 ease-in动画方式 延迟1s*/</div><div class="line">transition: all 1s ease-in 1s;</div><div class="line"></div><div class="line">/*</div><div class="line">top属性 1s动画 ease-in动画方式 </div><div class="line">left属性 1s动画 ease-out动画方式 延迟1s</div><div class="line">width属性 1s动画 liner动画方式 延迟2s</div><div class="line">height属性 1s动画 ease-in-out动画方式 延迟3s </div><div class="line">background-Color属性 1s动画 ease动画方式 延迟4s </div><div class="line">*/</div><div class="line">transition: top 1s ease-in,</div><div class="line">			left 1s  ease-out 1s,</div><div class="line">			width 1s  ease-liner 2s,</div><div class="line">			height 1s  ease-in-out 3s;</div></pre></td></tr></table></figure>
+<ul>
+<li><p><strong>动画方式:</strong></p>
+<ul>
+<li>动画的效果如下<br>![动画曲线][3]</li>
+</ul>
+</li>
+<li><p><strong>贝塞尔曲线动画</strong></p>
+<ul>
+<li>在设置动画曲线的位置通过<code>cubic-bezier()</code>的方式进行设置</li>
+<li>[计算贝塞尔曲线在线网址][4]</li>
+<li>语法:</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/* 其中 需要传入四个值,并且每个值都是0-1的小数*/</div><div class="line">transition: top 1s cubic-bezier(0.1,0.2,0.3,0.4);</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>step动画</strong><ul>
+<li>除了可以使用贝塞尔曲线设置外,我们还能够设置<code>过渡</code>的动画次数</li>
+<li>语法:</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/* 1s动画 每隔 1/6 s 完成一次  在每次间隔的 末尾 开始动画  */</div><div class="line">transition: top 1s steps(6,end);</div><div class="line">/* 1s动画 每隔 1/6 s 完成一次  在每次间隔的 开始 开始动画  */</div><div class="line">transition: top 1s steps(6,start);</div></pre></td></tr></table></figure>
+<h2 id="body高度问题"><a href="#body高度问题" class="headerlink" title="body高度问题"></a>body高度问题</h2><blockquote>
+<p><code>body</code>标签其实是一个盒子,但是我们一般很少直接使用它</p>
+</blockquote>
+<h3 id="body的高度"><a href="#body的高度" class="headerlink" title="body的高度"></a>body的高度</h3><ul>
+<li><p><strong>注意:</strong></p>
+<ul>
+<li>当我们设置了<code>body</code>的背景颜色时,整个页面都有效果</li>
+<li>但是当我们为其添加了<code>border</code>属性时,会发现他其实是根据内容改变的大小</li>
+</ul>
+</li>
+<li><p>body高度设置:  </p>
+<ul>
+<li><code>body</code>的本质就是一个<code>div</code> </li>
+<li>可以直接通过<code>height</code>设置他的高度</li>
+<li>默认会根据内容变高</li>
+</ul>
+</li>
+<li><p><strong>示例代码</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span>&#123;</div><div class="line">    <span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#0094f</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="设置跟浏览器显示区域高度一致"><a href="#设置跟浏览器显示区域高度一致" class="headerlink" title="设置跟浏览器显示区域高度一致"></a>设置跟浏览器显示区域高度一致</h3><ul>
+<li><p><strong>百分比高度</strong></p>
+<ul>
+<li>如果父盒子有高度,我们可以设置<code>height</code>属性为<code>100%</code>实现跟父盒子高度一致</li>
+<li>如果直接设置<code>body</code>的高度为<code>100%</code>是没有效果的</li>
+</ul>
+</li>
+<li><p>html标签高度</p>
+<ul>
+<li>如果设置了<code>html</code>的边框,我们发现其实他是套在<code>body</code>外部的一个盒子,所以如果想要全屏显示 我们可以设置<code>html</code>标签的高度为<code>100%</code> </li>
+</ul>
+</li>
+<li><p><strong>示例代码:</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span>&#123;</div><div class="line">			<span class="attribute">border</span>:<span class="number">1px</span> solid orange;</div><div class="line">			<span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">	&#125;</div><div class="line"><span class="selector-tag">body</span>&#123;</div><div class="line">			<span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">			<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#0094ff</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="transform-2d"><a href="#transform-2d" class="headerlink" title="transform_2d"></a>transform_2d</h2><blockquote>
+<p>在CSS3中,提供了变换这个属性<code>transform</code>,能够让我们更为灵活的操纵<code>html</code>元素,而不需要去考虑布局的问题</p>
+</blockquote>
+<h3 id="transform"><a href="#transform" class="headerlink" title="transform"></a>transform</h3><blockquote>
+<p>主要就是三个方法</p>
+</blockquote>
+<ul>
+<li><strong>语法:</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/* translate: 移动 第二个参数不传默认为0 */</div><div class="line">transform:translate(x,y);</div><div class="line"></div><div class="line">/* scale: 缩放 传递的是比例 比如 2倍,1.5倍,0.5倍等等 */</div><div class="line">transform:scale(x,y);</div><div class="line"></div><div class="line">/*rotate: 旋转 传递的是角度  360deg等于一圈*/</div><div class="line">transform:rotate(angle);</div><div class="line">/*skew: 斜方向扭曲 传递的是角度 360deg等于一圈 第二个参数不传默认为0*/</div><div class="line">transform:skew(xAngle,yAngle);</div><div class="line"></div><div class="line">/* 多个值 通过空格分隔*/</div><div class="line">tranform:translate(10px,10px) rotate(180deg) scale(1.5,1.5);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="transform-origin"><a href="#transform-origin" class="headerlink" title="transform-origin"></a>transform-origin</h3><blockquote>
+<p>这个属性指定的是移动时,以什么原点作为标准</p>
+</blockquote>
+<ul>
+<li><strong>语法:</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">/*x:50px y:中心 作为原点*/</div><div class="line">transform-origin:50px;</div><div class="line"></div><div class="line">/*x:50px y:50px 作为原点*/</div><div class="line">transform-origin:50px 50px;</div><div class="line"></div><div class="line">/*x:10% y:20% 作为原点*/</div><div class="line">transform-origin:10% 20%;</div><div class="line"></div><div class="line">/* 传入单词 </div><div class="line">可选:top,left,right,center,bottom</div><div class="line">*/</div><div class="line">/* 左上 作为原点 */</div><div class="line">transform-origin:right top;</div><div class="line">/* 中心作为原点 */</div><div class="line">transform-origin:center center;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/01/25/03.C3-2/" data-id="ciycuuhqf0000a4wmgp08b3k2" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-01.H5one" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/17/01.H5one/" class="article-date">
+  <time datetime="2017-01-17T08:56:35.243Z" itemprop="datePublished">2017-01-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
     
       <header class="article-header">
         
@@ -162,15 +792,12 @@
     </h1>
   
 
-        
-        <a href="/2017/01/17/01.H5one/" class="archive-article-date">
-  	<time datetime="2017-01-17T08:56:35.243Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
+        <!-- Table of Contents -->
+        
         <h2 id="DOCTYPE声明"><a href="#DOCTYPE声明" class="headerlink" title="DOCTYPE声明"></a>DOCTYPE声明</h2><h3 id="DOCTYPE的作用"><a href="#DOCTYPE的作用" class="headerlink" title="DOCTYPE的作用"></a>DOCTYPE的作用</h3><blockquote>
 <p>一个标准的<code>HTML</code>文档,开头第一句都应该是<code>&lt;!DOCTYPE&gt;</code>,根据<code>&lt;HTML&gt;</code>版本不同,写法上会有所差别.</p>
 </blockquote>
@@ -946,36 +1573,29 @@
 </ul>
 
       
-
-      
     </div>
-    <div class="article-info article-info-index">
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/01/17/01.H5one/" data-id="ciy1alcvq000190wm5h3ftzpv" class="article-share-link">Share</a>
       
       
       
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/17/01.H5one/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+    </footer>
   </div>
+  
 </article>
 
 
 
-
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/17/hello-world/" class="article-date">
+  <time datetime="2017-01-17T08:30:24.565Z" itemprop="datePublished">2017-01-17</time>
+</a>
+    
+  </div>
   <div class="article-inner">
+    
     
       <header class="article-header">
         
@@ -985,15 +1605,12 @@
     </h1>
   
 
-        
-        <a href="/2017/01/17/hello-world/" class="archive-article-date">
-  	<time datetime="2017-01-17T08:30:24.565Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
+        <!-- Table of Contents -->
+        
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -1005,275 +1622,164 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
-
-      
     </div>
-    <div class="article-info article-info-index">
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/01/17/hello-world/" data-id="ciy19h4hh0000qgwmabklcut5" class="article-share-link">Share</a>
       
       
       
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/17/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+    </footer>
   </div>
+  
 </article>
 
 
 
+  
 
-
-
+</section>
+           
+    <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+     
+        <h3 class="follow-title ">Follow me</h3>
+     
+    <div class="widget follow">
+     
+     
+            <a class="github" aria-hidden="true" href="https://github.com/giscafer" target="_blank" title="Github"></a>
+    
+     
+          <a class="weibo" aria-hidden="true"  href="http://weibo.com/laohoubin" target="_blank" title="微博"></a>
+    
+     
+            <a class="zhihu" aria-hidden="true"  href="http://www.zhihu.com/people/giscafer" target="_blank" title="知乎"></a>
+    
+     
+          <a class="email" aria-hidden="true"  href="mailto:youemail@outlook.com" target="_blank" title="邮箱"></a>
+    
+    </div>
+  </div>
 
 
   
+    
   
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title recent-posts">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/01/25/04.C3-3/">CSS3第三天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/25/03.C3-2/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/17/01.H5one/">Hello World第一天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/17/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+
+   <div class="widget-wrap">
+    <h3 class="widget-title lastest-comments">Latest Comments</h3>
+    <div class="widget">
+        <span>此widget基于多说，如需使用，请启用 duoshuo_shortname 属性</span>
+    </div>
+  </div>
 
 
-          </div>
-        </div>
+  
+    
+
+   <div class="widget-wrap">
+    <h3 class="widget-title hot-comment-posts">Hot Posts</h3>
+    <div class="widget">
+        <span>此widget基于多说，如需使用，请启用 duoshuo_shortname 属性</span>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title archive">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+
       </div>
       <footer id="footer">
+  
   <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2017 Rella
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+    <div id="footer-left">
+      &copy; 2014 - 2017 Rella&nbsp;|&nbsp;
+      Theme by <a href="https://github.com/giscafer/hexo-theme-cafe/" target="_blank">Cafe</a>
+    </div>
+     <div id="footer-right">
+      Contact&nbsp;|&nbsp;youemail@outlook.com
     </div>
   </div>
 </footer>
+ <script src="/jquery/jquery.min.js"></script>
     </div>
-    <script>
-	var yiliaConfig = {
-		mathjax: false,
-		isHome: true,
-		isPost: false,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false,
-		root: "/",
-		innerArchive: true,
-		showTags: false
-	}
-</script>
-
-<script>!function(t){function n(r){if(e[r])return e[r].exports;var o=e[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,n),o.loaded=!0,o.exports}var e={};return n.m=t,n.c=e,n.p="./",n(0)}([function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function o(t,n){var e=/\/|index.html/g;return t.replace(e,"")===n.replace(e,"")}function i(){for(var t=document.querySelectorAll(".js-header-menu li a"),n=window.location.pathname,e=0,r=t.length;e<r;e++){var i=t[e];o(n,i.getAttribute("href"))&&(0,d.default)(i,"active")}}function u(t){for(var n=t.offsetLeft,e=t.offsetParent;null!==e;)n+=e.offsetLeft,e=e.offsetParent;return n}function f(t){for(var n=t.offsetTop,e=t.offsetParent;null!==e;)n+=e.offsetTop,e=e.offsetParent;return n}function c(t,n,e,r,o){var i=u(t),c=f(t)-n;if(c-e<=o){var a=t.$newDom;a||(a=t.cloneNode(!0),(0,h.default)(t,a),t.$newDom=a,a.style.position="fixed",a.style.top=(e||c)+"px",a.style.left=i+"px",a.style.zIndex=r||2,a.style.width="100%",a.style.color="#fff"),a.style.visibility="visible",t.style.visibility="hidden"}else{t.style.visibility="visible";var s=t.$newDom;s&&(s.style.visibility="hidden")}}function a(){var t=document.querySelector(".js-overlay"),n=document.querySelector(".js-header-menu");c(t,document.body.scrollTop,-63,2,0),c(n,document.body.scrollTop,1,3,0)}function s(){document.querySelector("#container").addEventListener("scroll",function(t){a()}),window.addEventListener("scroll",function(t){a()}),a()}function l(){x.default.versions.mobile&&window.screen.width<800&&(i(),s())}var p=e(71),d=r(p),v=e(72),y=(r(v),e(84)),h=r(y),b=e(69),x=r(b),m=e(75),g=r(m),w=e(70);l(),(0,w.addLoadEvent)(function(){g.default.init()}),t.exports={}},function(t,n){var e=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=e)},function(t,n){var e={}.hasOwnProperty;t.exports=function(t,n){return e.call(t,n)}},function(t,n,e){var r=e(49),o=e(15);t.exports=function(t){return r(o(t))}},function(t,n,e){t.exports=!e(8)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,n,e){var r=e(6),o=e(12);t.exports=e(4)?function(t,n,e){return r.f(t,n,o(1,e))}:function(t,n,e){return t[n]=e,t}},function(t,n,e){var r=e(10),o=e(30),i=e(24),u=Object.defineProperty;n.f=e(4)?Object.defineProperty:function(t,n,e){if(r(t),n=i(n,!0),r(e),o)try{return u(t,n,e)}catch(t){}if("get"in e||"set"in e)throw TypeError("Accessors not supported!");return"value"in e&&(t[n]=e.value),t}},function(t,n,e){var r=e(22)("wks"),o=e(13),i=e(1).Symbol,u="function"==typeof i,f=t.exports=function(t){return r[t]||(r[t]=u&&i[t]||(u?i:o)("Symbol."+t))};f.store=r},function(t,n){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,n,e){var r=e(35),o=e(16);t.exports=Object.keys||function(t){return r(t,o)}},function(t,n,e){var r=e(11);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,n){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n){var e=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++e+r).toString(36))}},function(t,n){var e=t.exports={version:"2.4.0"};"number"==typeof __e&&(__e=e)},function(t,n){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,n){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,n){t.exports={}},function(t,n){t.exports=!0},function(t,n){n.f={}.propertyIsEnumerable},function(t,n,e){var r=e(6).f,o=e(2),i=e(7)("toStringTag");t.exports=function(t,n,e){t&&!o(t=e?t:t.prototype,i)&&r(t,i,{configurable:!0,value:n})}},function(t,n,e){var r=e(22)("keys"),o=e(13);t.exports=function(t){return r[t]||(r[t]=o(t))}},function(t,n,e){var r=e(1),o="__core-js_shared__",i=r[o]||(r[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,n){var e=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:e)(t)}},function(t,n,e){var r=e(11);t.exports=function(t,n){if(!r(t))return t;var e,o;if(n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;if("function"==typeof(e=t.valueOf)&&!r(o=e.call(t)))return o;if(!n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;throw TypeError("Can't convert object to primitive value")}},function(t,n,e){var r=e(1),o=e(14),i=e(18),u=e(26),f=e(6).f;t.exports=function(t){var n=o.Symbol||(o.Symbol=i?{}:r.Symbol||{});"_"==t.charAt(0)||t in n||f(n,t,{value:u.f(t)})}},function(t,n,e){n.f=e(7)},function(t,n,e){var r=e(1),o=e(14),i=e(46),u=e(5),f="prototype",c=function(t,n,e){var a,s,l,p=t&c.F,d=t&c.G,v=t&c.S,y=t&c.P,h=t&c.B,b=t&c.W,x=d?o:o[n]||(o[n]={}),m=x[f],g=d?r:v?r[n]:(r[n]||{})[f];d&&(e=n);for(a in e)s=!p&&g&&void 0!==g[a],s&&a in x||(l=s?g[a]:e[a],x[a]=d&&"function"!=typeof g[a]?e[a]:h&&s?i(l,r):b&&g[a]==l?function(t){var n=function(n,e,r){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(n);case 2:return new t(n,e)}return new t(n,e,r)}return t.apply(this,arguments)};return n[f]=t[f],n}(l):y&&"function"==typeof l?i(Function.call,l):l,y&&((x.virtual||(x.virtual={}))[a]=l,t&c.R&&m&&!m[a]&&u(m,a,l)))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,c.U=64,c.R=128,t.exports=c},function(t,n){var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}},function(t,n,e){var r=e(11),o=e(1).document,i=r(o)&&r(o.createElement);t.exports=function(t){return i?o.createElement(t):{}}},function(t,n,e){t.exports=!e(4)&&!e(8)(function(){return 7!=Object.defineProperty(e(29)("div"),"a",{get:function(){return 7}}).a})},function(t,n,e){"use strict";var r=e(18),o=e(27),i=e(36),u=e(5),f=e(2),c=e(17),a=e(51),s=e(20),l=e(58),p=e(7)("iterator"),d=!([].keys&&"next"in[].keys()),v="@@iterator",y="keys",h="values",b=function(){return this};t.exports=function(t,n,e,x,m,g,w){a(e,n,x);var O,S,_,j=function(t){if(!d&&t in A)return A[t];switch(t){case y:return function(){return new e(this,t)};case h:return function(){return new e(this,t)}}return function(){return new e(this,t)}},P=n+" Iterator",E=m==h,M=!1,A=t.prototype,T=A[p]||A[v]||m&&A[m],L=T||j(m),N=m?E?j("entries"):L:void 0,C="Array"==n?A.entries||T:T;if(C&&(_=l(C.call(new t)),_!==Object.prototype&&(s(_,P,!0),r||f(_,p)||u(_,p,b))),E&&T&&T.name!==h&&(M=!0,L=function(){return T.call(this)}),r&&!w||!d&&!M&&A[p]||u(A,p,L),c[n]=L,c[P]=b,m)if(O={values:E?L:j(h),keys:g?L:j(y),entries:N},w)for(S in O)S in A||i(A,S,O[S]);else o(o.P+o.F*(d||M),n,O);return O}},function(t,n,e){var r=e(10),o=e(55),i=e(16),u=e(21)("IE_PROTO"),f=function(){},c="prototype",a=function(){var t,n=e(29)("iframe"),r=i.length,o="<",u=">";for(n.style.display="none",e(48).appendChild(n),n.src="javascript:",t=n.contentWindow.document,t.open(),t.write(o+"script"+u+"document.F=Object"+o+"/script"+u),t.close(),a=t.F;r--;)delete a[c][i[r]];return a()};t.exports=Object.create||function(t,n){var e;return null!==t?(f[c]=r(t),e=new f,f[c]=null,e[u]=t):e=a(),void 0===n?e:o(e,n)}},function(t,n,e){var r=e(35),o=e(16).concat("length","prototype");n.f=Object.getOwnPropertyNames||function(t){return r(t,o)}},function(t,n){n.f=Object.getOwnPropertySymbols},function(t,n,e){var r=e(2),o=e(3),i=e(45)(!1),u=e(21)("IE_PROTO");t.exports=function(t,n){var e,f=o(t),c=0,a=[];for(e in f)e!=u&&r(f,e)&&a.push(e);for(;n.length>c;)r(f,e=n[c++])&&(~i(a,e)||a.push(e));return a}},function(t,n,e){t.exports=e(5)},function(t,n,e){var r=e(15);t.exports=function(t){return Object(r(t))}},function(t,n,e){t.exports={default:e(41),__esModule:!0}},function(t,n,e){t.exports={default:e(42),__esModule:!0}},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(39),i=r(o),u=e(38),f=r(u),c="function"==typeof f.default&&"symbol"==typeof i.default?function(t){return typeof t}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":typeof t};n.default="function"==typeof f.default&&"symbol"===c(i.default)?function(t){return"undefined"==typeof t?"undefined":c(t)}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":"undefined"==typeof t?"undefined":c(t)}},function(t,n,e){e(65),e(63),e(66),e(67),t.exports=e(14).Symbol},function(t,n,e){e(64),e(68),t.exports=e(26).f("iterator")},function(t,n){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,n){t.exports=function(){}},function(t,n,e){var r=e(3),o=e(61),i=e(60);t.exports=function(t){return function(n,e,u){var f,c=r(n),a=o(c.length),s=i(u,a);if(t&&e!=e){for(;a>s;)if(f=c[s++],f!=f)return!0}else for(;a>s;s++)if((t||s in c)&&c[s]===e)return t||s||0;return!t&&-1}}},function(t,n,e){var r=e(43);t.exports=function(t,n,e){if(r(t),void 0===n)return t;switch(e){case 1:return function(e){return t.call(n,e)};case 2:return function(e,r){return t.call(n,e,r)};case 3:return function(e,r,o){return t.call(n,e,r,o)}}return function(){return t.apply(n,arguments)}}},function(t,n,e){var r=e(9),o=e(34),i=e(19);t.exports=function(t){var n=r(t),e=o.f;if(e)for(var u,f=e(t),c=i.f,a=0;f.length>a;)c.call(t,u=f[a++])&&n.push(u);return n}},function(t,n,e){t.exports=e(1).document&&document.documentElement},function(t,n,e){var r=e(28);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,n,e){var r=e(28);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,n,e){"use strict";var r=e(32),o=e(12),i=e(20),u={};e(5)(u,e(7)("iterator"),function(){return this}),t.exports=function(t,n,e){t.prototype=r(u,{next:o(1,e)}),i(t,n+" Iterator")}},function(t,n){t.exports=function(t,n){return{value:n,done:!!t}}},function(t,n,e){var r=e(9),o=e(3);t.exports=function(t,n){for(var e,i=o(t),u=r(i),f=u.length,c=0;f>c;)if(i[e=u[c++]]===n)return e}},function(t,n,e){var r=e(13)("meta"),o=e(11),i=e(2),u=e(6).f,f=0,c=Object.isExtensible||function(){return!0},a=!e(8)(function(){return c(Object.preventExtensions({}))}),s=function(t){u(t,r,{value:{i:"O"+ ++f,w:{}}})},l=function(t,n){if(!o(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!i(t,r)){if(!c(t))return"F";if(!n)return"E";s(t)}return t[r].i},p=function(t,n){if(!i(t,r)){if(!c(t))return!0;if(!n)return!1;s(t)}return t[r].w},d=function(t){return a&&v.NEED&&c(t)&&!i(t,r)&&s(t),t},v=t.exports={KEY:r,NEED:!1,fastKey:l,getWeak:p,onFreeze:d}},function(t,n,e){var r=e(6),o=e(10),i=e(9);t.exports=e(4)?Object.defineProperties:function(t,n){o(t);for(var e,u=i(n),f=u.length,c=0;f>c;)r.f(t,e=u[c++],n[e]);return t}},function(t,n,e){var r=e(19),o=e(12),i=e(3),u=e(24),f=e(2),c=e(30),a=Object.getOwnPropertyDescriptor;n.f=e(4)?a:function(t,n){if(t=i(t),n=u(n,!0),c)try{return a(t,n)}catch(t){}if(f(t,n))return o(!r.f.call(t,n),t[n])}},function(t,n,e){var r=e(3),o=e(33).f,i={}.toString,u="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],f=function(t){try{return o(t)}catch(t){return u.slice()}};t.exports.f=function(t){return u&&"[object Window]"==i.call(t)?f(t):o(r(t))}},function(t,n,e){var r=e(2),o=e(37),i=e(21)("IE_PROTO"),u=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=o(t),r(t,i)?t[i]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,n,e){var r=e(23),o=e(15);t.exports=function(t){return function(n,e){var i,u,f=String(o(n)),c=r(e),a=f.length;return c<0||c>=a?t?"":void 0:(i=f.charCodeAt(c),i<55296||i>56319||c+1===a||(u=f.charCodeAt(c+1))<56320||u>57343?t?f.charAt(c):i:t?f.slice(c,c+2):(i-55296<<10)+(u-56320)+65536)}}},function(t,n,e){var r=e(23),o=Math.max,i=Math.min;t.exports=function(t,n){return t=r(t),t<0?o(t+n,0):i(t,n)}},function(t,n,e){var r=e(23),o=Math.min;t.exports=function(t){return t>0?o(r(t),9007199254740991):0}},function(t,n,e){"use strict";var r=e(44),o=e(52),i=e(17),u=e(3);t.exports=e(31)(Array,"Array",function(t,n){this._t=u(t),this._i=0,this._k=n},function(){var t=this._t,n=this._k,e=this._i++;return!t||e>=t.length?(this._t=void 0,o(1)):"keys"==n?o(0,e):"values"==n?o(0,t[e]):o(0,[e,t[e]])},"values"),i.Arguments=i.Array,r("keys"),r("values"),r("entries")},function(t,n){},function(t,n,e){"use strict";var r=e(59)(!0);e(31)(String,"String",function(t){this._t=String(t),this._i=0},function(){var t,n=this._t,e=this._i;return e>=n.length?{value:void 0,done:!0}:(t=r(n,e),this._i+=t.length,{value:t,done:!1})})},function(t,n,e){"use strict";var r=e(1),o=e(2),i=e(4),u=e(27),f=e(36),c=e(54).KEY,a=e(8),s=e(22),l=e(20),p=e(13),d=e(7),v=e(26),y=e(25),h=e(53),b=e(47),x=e(50),m=e(10),g=e(3),w=e(24),O=e(12),S=e(32),_=e(57),j=e(56),P=e(6),E=e(9),M=j.f,A=P.f,T=_.f,L=r.Symbol,N=r.JSON,C=N&&N.stringify,k="prototype",F=d("_hidden"),q=d("toPrimitive"),I={}.propertyIsEnumerable,B=s("symbol-registry"),D=s("symbols"),W=s("op-symbols"),H=Object[k],K="function"==typeof L,R=r.QObject,J=!R||!R[k]||!R[k].findChild,U=i&&a(function(){return 7!=S(A({},"a",{get:function(){return A(this,"a",{value:7}).a}})).a})?function(t,n,e){var r=M(H,n);r&&delete H[n],A(t,n,e),r&&t!==H&&A(H,n,r)}:A,G=function(t){var n=D[t]=S(L[k]);return n._k=t,n},$=K&&"symbol"==typeof L.iterator?function(t){return"symbol"==typeof t}:function(t){return t instanceof L},z=function(t,n,e){return t===H&&z(W,n,e),m(t),n=w(n,!0),m(e),o(D,n)?(e.enumerable?(o(t,F)&&t[F][n]&&(t[F][n]=!1),e=S(e,{enumerable:O(0,!1)})):(o(t,F)||A(t,F,O(1,{})),t[F][n]=!0),U(t,n,e)):A(t,n,e)},Y=function(t,n){m(t);for(var e,r=b(n=g(n)),o=0,i=r.length;i>o;)z(t,e=r[o++],n[e]);return t},Q=function(t,n){return void 0===n?S(t):Y(S(t),n)},X=function(t){var n=I.call(this,t=w(t,!0));return!(this===H&&o(D,t)&&!o(W,t))&&(!(n||!o(this,t)||!o(D,t)||o(this,F)&&this[F][t])||n)},V=function(t,n){if(t=g(t),n=w(n,!0),t!==H||!o(D,n)||o(W,n)){var e=M(t,n);return!e||!o(D,n)||o(t,F)&&t[F][n]||(e.enumerable=!0),e}},Z=function(t){for(var n,e=T(g(t)),r=[],i=0;e.length>i;)o(D,n=e[i++])||n==F||n==c||r.push(n);return r},tt=function(t){for(var n,e=t===H,r=T(e?W:g(t)),i=[],u=0;r.length>u;)!o(D,n=r[u++])||e&&!o(H,n)||i.push(D[n]);return i};K||(L=function(){if(this instanceof L)throw TypeError("Symbol is not a constructor!");var t=p(arguments.length>0?arguments[0]:void 0),n=function(e){this===H&&n.call(W,e),o(this,F)&&o(this[F],t)&&(this[F][t]=!1),U(this,t,O(1,e))};return i&&J&&U(H,t,{configurable:!0,set:n}),G(t)},f(L[k],"toString",function(){return this._k}),j.f=V,P.f=z,e(33).f=_.f=Z,e(19).f=X,e(34).f=tt,i&&!e(18)&&f(H,"propertyIsEnumerable",X,!0),v.f=function(t){return G(d(t))}),u(u.G+u.W+u.F*!K,{Symbol:L});for(var nt="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),et=0;nt.length>et;)d(nt[et++]);for(var nt=E(d.store),et=0;nt.length>et;)y(nt[et++]);u(u.S+u.F*!K,"Symbol",{for:function(t){return o(B,t+="")?B[t]:B[t]=L(t)},keyFor:function(t){if($(t))return h(B,t);throw TypeError(t+" is not a symbol!")},useSetter:function(){J=!0},useSimple:function(){J=!1}}),u(u.S+u.F*!K,"Object",{create:Q,defineProperty:z,defineProperties:Y,getOwnPropertyDescriptor:V,getOwnPropertyNames:Z,getOwnPropertySymbols:tt}),N&&u(u.S+u.F*(!K||a(function(){var t=L();return"[null]"!=C([t])||"{}"!=C({a:t})||"{}"!=C(Object(t))})),"JSON",{stringify:function(t){if(void 0!==t&&!$(t)){for(var n,e,r=[t],o=1;arguments.length>o;)r.push(arguments[o++]);return n=r[1],"function"==typeof n&&(e=n),!e&&x(n)||(n=function(t,n){if(e&&(n=e.call(this,t,n)),!$(n))return n}),r[1]=n,C.apply(N,r)}}}),L[k][q]||e(5)(L[k],q,L[k].valueOf),l(L,"Symbol"),l(Math,"Math",!0),l(r.JSON,"JSON",!0)},function(t,n,e){e(25)("asyncIterator")},function(t,n,e){e(25)("observable")},function(t,n,e){e(62);for(var r=e(1),o=e(5),i=e(17),u=e(7)("toStringTag"),f=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],c=0;c<5;c++){var a=f[c],s=r[a],l=s&&s.prototype;l&&!l[u]&&o(l,u,a),i[a]=i.Array}},function(t,n){"use strict";var e={versions:function(){var t=window.navigator.userAgent;return{trident:t.indexOf("Trident")>-1,presto:t.indexOf("Presto")>-1,webKit:t.indexOf("AppleWebKit")>-1,gecko:t.indexOf("Gecko")>-1&&t.indexOf("KHTML")==-1,mobile:!!t.match(/AppleWebKit.*Mobile.*/),ios:!!t.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:t.indexOf("Android")>-1||t.indexOf("Linux")>-1,iPhone:t.indexOf("iPhone")>-1||t.indexOf("Mac")>-1,iPad:t.indexOf("iPad")>-1,webApp:t.indexOf("Safari")==-1,weixin:t.indexOf("MicroMessenger")==-1}}()};t.exports=e},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}var o=e(40),i=r(o),u=function(){function t(t,n,e){return n||e?String.fromCharCode(n||e):o[t]||t}function n(t){return l[t]}var e=/&quot;|&lt;|&gt;|&amp;|&nbsp;|&apos;|&#(\d+);|&#(\d+)/g,r=/['<> "&]/g,o={"&quot;":'"',"&lt;":"<","&gt;":">","&amp;":"&","&nbsp;":" "},f=/\u00a0/g,c=/<br\s*\/?>/gi,a=/\r?\n/g,s=/\s/g,l={};for(var p in o)l[o[p]]=p;return o["&apos;"]="'",l["'"]="&#39;",{encode:function(t){return t?(""+t).replace(r,n).replace(a,"<br/>").replace(s,"&nbsp;"):""},decode:function(n){return n?(""+n).replace(c,"\n").replace(e,t).replace(f," "):""},encodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},encodeBase16forJSON:function(t){if(!t)return t;t=t.replace(/[\u4E00-\u9FBF]/gi,function(t){return escape(t).replace("%u","\\u")});for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},decodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e+=2)n.push(String.fromCharCode("0x"+t.slice(e,e+2)));return n.join("")},encodeObject:function(t){if(t instanceof Array)for(var n=0,e=t.length;e>n;n++)t[n]=u.encodeObject(t[n]);else if("object"==("undefined"==typeof t?"undefined":(0,i.default)(t)))for(var r in t)t[r]=u.encodeObject(t[r]);else if("string"==typeof t)return u.encode(t);return t},loadScript:function(t){var n=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(n),n.setAttribute("src",t)},addLoadEvent:function(t){var n=window.onload;"function"!=typeof window.onload?window.onload=t:window.onload=function(){n(),t()}}}}();t.exports=u},function(t,n){function e(t,n){t.classList?t.classList.add(n):t.className+=" "+n}t.exports=e},function(t,n){function e(t,n){if(t.classList)t.classList.remove(n);else{var e=new RegExp("(^|\\b)"+n.split(" ").join("|")+"(\\b|$)","gi");t.className=t.className.replace(e," ")}}t.exports=e},,,function(t,n){"use strict";function e(){var t=document.querySelector("#page-nav");if(t&&!document.querySelector("#page-nav .extend.prev")&&(t.innerHTML='<a class="extend prev disabled" rel="prev">&laquo; Prev</a>'+t.innerHTML),t&&!document.querySelector("#page-nav .extend.next")&&(t.innerHTML=t.innerHTML+'<a class="extend next disabled" rel="next">Next &raquo;</a>'),yiliaConfig&&yiliaConfig.open_in_new){var n=document.querySelectorAll(".article-entry a:not(.article-more-a)");n.forEach(function(t){t.setAttribute("target","_blank")})}var e=document.querySelector("#js-aboutme");e&&0!==e.length&&(e.innerHTML=e.innerText)}t.exports={init:e}},,,,,,,,,function(t,n){function e(t,n){if("string"==typeof n)return t.insertAdjacentHTML("afterend",n);var e=t.nextSibling;return e?t.parentNode.insertBefore(n,e):t.parentNode.appendChild(n)}t.exports=e}])</script><script src="/./main.2d7529.js"></script><script>!function(){var e=function(e){var t=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(t),t.setAttribute("src",e)};e("/slider.885efe.js")}()</script>
-
-
-    
-<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
-  <div class="tools-nav header-menu">
-    
-    
-      
-      
-      
-    
-      
-      
-      
-    
-      
-      
-      
-    
-    
-
-    <ul style="width: 70%">
-    
-    
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
-      
-        
-    </ul>
-  </div>
-  <div class="tools-wrap">
-    
-    	<section class="tools-section tools-section-all" q-show="innerArchive">
-        <div class="search-wrap">
-          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
-          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
-          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
-        </div>
-        <div class="widget tagcloud search-tag">
-          <p class="search-tag-wording">tag:</p>
-          <label class="search-switch">
-            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
-          </label>
-          <ul class="article-tag-list" q-show="showTags">
-            
-            <div class="clearfix"></div>
-          </ul>
-        </div>
-        <ul class="search-ul">
-          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
-            2、在根目录_config.yml里添加配置：
-<pre style="font-size: 12px;" q-show="jsonFail">
-  jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: true
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
-</pre>
-          </p>
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-        </ul>
-    	</section>
-    
-
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
-
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
-    	</section>
-    
-  </div>
+    <nav id="mobile-nav">
   
-</div>
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
+<script>
+// Elevator script included on the page, already.
+window.onload = function() {
+  var elevator = new Elevator({
+    selector:'.back-to-top-btn',
+    element: document.querySelector('.back-to-top-btn'),
+    duration: 1000 // milliseconds
+  });
+}
+</script>
+    
 
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
 
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
 
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
+ <script src="/js/is.js"></script>
 
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
 
-            <div class="pswp__top-bar">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
-                <!--  Controls are self-explanatory. Order can be changed. -->
 
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
+<script src="/js/script.js"></script>
+<script src="/js/elevator.js"></script>
   </div>
 </body>
 </html>
