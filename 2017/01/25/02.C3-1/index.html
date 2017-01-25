@@ -96,7 +96,7 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -145,6 +145,11 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
     <div class="article-entry" itemprop="articleBody">
       
         <!-- Table of Contents -->
+        
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Content</strong>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C3初识"><span class="toc-number">1.</span> <span class="toc-text">C3初识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3帮助手册"><span class="toc-number">1.1.</span> <span class="toc-text">CSS3帮助手册</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3简介"><span class="toc-number">1.2.</span> <span class="toc-text">CSS3简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前缀"><span class="toc-number">1.2.1.</span> <span class="toc-text">前缀:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#核心知识点"><span class="toc-number">1.2.2.</span> <span class="toc-text">核心知识点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3选择器"><span class="toc-number">1.3.</span> <span class="toc-text">CSS3选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性选择器"><span class="toc-number">1.3.1.</span> <span class="toc-text">属性选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#兄弟选择器"><span class="toc-number">1.3.2.</span> <span class="toc-text">兄弟选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#伪类选择器"><span class="toc-number">1.3.3.</span> <span class="toc-text">伪类选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#伪元素选择器"><span class="toc-number">1.3.4.</span> <span class="toc-text">伪元素选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#before-amp-after"><span class="toc-number">1.3.4.1.</span> <span class="toc-text">before&after</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#first-letter"><span class="toc-number">1.3.4.2.</span> <span class="toc-text">first-letter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#first-line"><span class="toc-number">1.3.4.3.</span> <span class="toc-text">first-line</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#selection"><span class="toc-number">1.3.4.4.</span> <span class="toc-text">selection</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#placeholder"><span class="toc-number">1.3.4.5.</span> <span class="toc-text">placeholder</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#颜色"><span class="toc-number">1.4.</span> <span class="toc-text">颜色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#边框圆角"><span class="toc-number">1.5.</span> <span class="toc-text">边框圆角</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用方法"><span class="toc-number">1.5.1.</span> <span class="toc-text">使用方法:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小结"><span class="toc-number">1.5.2.</span> <span class="toc-text">小结:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#边框阴影"><span class="toc-number">1.6.</span> <span class="toc-text">边框阴影</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用方法-1"><span class="toc-number">1.6.1.</span> <span class="toc-text">使用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字体阴影"><span class="toc-number">1.7.</span> <span class="toc-text">字体阴影</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本使用"><span class="toc-number">1.7.1.</span> <span class="toc-text">基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Demo-凹凸文字"><span class="toc-number">1.7.2.</span> <span class="toc-text">Demo(凹凸文字)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#盒子模型"><span class="toc-number">1.8.</span> <span class="toc-text">盒子模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#盒子尺寸计算-默认状态"><span class="toc-number">1.8.1.</span> <span class="toc-text">盒子尺寸计算_默认状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#box-sizing属性"><span class="toc-number">1.8.2.</span> <span class="toc-text">box-sizing属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#渐变"><span class="toc-number">1.9.</span> <span class="toc-text">渐变</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#线性渐变"><span class="toc-number">1.9.1.</span> <span class="toc-text">线性渐变</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#径向渐变"><span class="toc-number">1.9.2.</span> <span class="toc-text">径向渐变</span></a></li></ol></li></ol></li></ol>
+        </div>
         
         <h1 id="C3初识"><a href="#C3初识" class="headerlink" title="C3初识"></a>C3初识</h1><h2 id="CSS3帮助手册"><a href="#CSS3帮助手册" class="headerlink" title="CSS3帮助手册"></a>CSS3帮助手册</h2><blockquote>
 <p>CSS3一直在持续进化中，我们可以通过帮助文档去学习CSS3,下面把常用的文档罗列一下：</p>
@@ -532,9 +537,9 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/25/02.C3-1/" data-id="ciycxphxv0000l4wmu85faw22" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/01/25/02.C3-1/" data-id="ciycxphxv0000l4wmu85faw22" class="article-share-link">Share</a>
       
-        <a href="http://yoursite.com/2017/01/25/02.C3-1/#ds-thread" class="article-comment-link">留言</a>
+        <a href="http://yoursite.com/2017/01/25/02.C3-1/#ds-thread" class="article-comment-link">Comments</a>
       
       
       
@@ -547,7 +552,7 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
 <nav id="article-nav">
   
     <a href="/2017/01/25/03.C3-2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           css3第二天
@@ -557,7 +562,7 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
   
   
     <a href="/2017/01/17/01.H5one/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">HTML5第一天</div>
     </a>
   
@@ -581,17 +586,10 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
 
   
     
-    <div class="widget-wrap">
+  
     
-      <div class="widget" id="toc-widget-fixed">
-      
-        <strong class="toc-title">文章目录</strong>
-        <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C3初识"><span class="toc-number">1.</span> <span class="toc-text">C3初识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3帮助手册"><span class="toc-number">1.1.</span> <span class="toc-text">CSS3帮助手册</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3简介"><span class="toc-number">1.2.</span> <span class="toc-text">CSS3简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前缀"><span class="toc-number">1.2.1.</span> <span class="toc-text">前缀:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#核心知识点"><span class="toc-number">1.2.2.</span> <span class="toc-text">核心知识点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3选择器"><span class="toc-number">1.3.</span> <span class="toc-text">CSS3选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性选择器"><span class="toc-number">1.3.1.</span> <span class="toc-text">属性选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#兄弟选择器"><span class="toc-number">1.3.2.</span> <span class="toc-text">兄弟选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#伪类选择器"><span class="toc-number">1.3.3.</span> <span class="toc-text">伪类选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#伪元素选择器"><span class="toc-number">1.3.4.</span> <span class="toc-text">伪元素选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#before-amp-after"><span class="toc-number">1.3.4.1.</span> <span class="toc-text">before&after</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#first-letter"><span class="toc-number">1.3.4.2.</span> <span class="toc-text">first-letter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#first-line"><span class="toc-number">1.3.4.3.</span> <span class="toc-text">first-line</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#selection"><span class="toc-number">1.3.4.4.</span> <span class="toc-text">selection</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#placeholder"><span class="toc-number">1.3.4.5.</span> <span class="toc-text">placeholder</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#颜色"><span class="toc-number">1.4.</span> <span class="toc-text">颜色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#边框圆角"><span class="toc-number">1.5.</span> <span class="toc-text">边框圆角</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用方法"><span class="toc-number">1.5.1.</span> <span class="toc-text">使用方法:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小结"><span class="toc-number">1.5.2.</span> <span class="toc-text">小结:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#边框阴影"><span class="toc-number">1.6.</span> <span class="toc-text">边框阴影</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用方法-1"><span class="toc-number">1.6.1.</span> <span class="toc-text">使用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字体阴影"><span class="toc-number">1.7.</span> <span class="toc-text">字体阴影</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本使用"><span class="toc-number">1.7.1.</span> <span class="toc-text">基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Demo-凹凸文字"><span class="toc-number">1.7.2.</span> <span class="toc-text">Demo(凹凸文字)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#盒子模型"><span class="toc-number">1.8.</span> <span class="toc-text">盒子模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#盒子尺寸计算-默认状态"><span class="toc-number">1.8.1.</span> <span class="toc-text">盒子尺寸计算_默认状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#box-sizing属性"><span class="toc-number">1.8.2.</span> <span class="toc-text">box-sizing属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#渐变"><span class="toc-number">1.9.</span> <span class="toc-text">渐变</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#线性渐变"><span class="toc-number">1.9.1.</span> <span class="toc-text">线性渐变</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#径向渐变"><span class="toc-number">1.9.2.</span> <span class="toc-text">径向渐变</span></a></li></ol></li></ol></li></ol>
-          </div>
-      </div>
-    </div>
-
+  
+    
   
     
 
@@ -602,12 +600,7 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
     
   
     
-  
-    
 
-
-  
-    
 
   
     
@@ -621,10 +614,10 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
   <div class="outer">
     <div id="footer-left">
       &copy; 2014 - 2017 Rella&nbsp;|&nbsp;
-      主题 <a href="https://github.com/giscafer/hexo-theme-cafe/" target="_blank">Cafe</a>
+      Theme by <a href="https://github.com/giscafer/hexo-theme-cafe/" target="_blank">Cafe</a>
     </div>
      <div id="footer-right">
-      联系方式&nbsp;|&nbsp;asrella@163.com
+      Contact&nbsp;|&nbsp;asrella@163.com
     </div>
   </div>
 </footer>
