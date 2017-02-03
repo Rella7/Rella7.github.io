@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>css3第二天 | Rella</title>
+  <title>Rella</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -176,13 +176,8 @@
           2017-01-25
       </time>
     
-    
-    | 
-    <a href='/tags/CSS3/'>CSS3</a>
-    
-    
 </span>
-                <h1>css3第二天</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
@@ -192,14 +187,11 @@
 </blockquote>
 <p><img src="imgs/image_bg.png" alt="backGroundCSS3新增属性"></p>
 <h4 id="backGround-clip"><a href="#backGround-clip" class="headerlink" title="backGround-clip:"></a><strong>backGround-clip:</strong></h4><pre><code>* 将背景设置好后,通过这个属性可以把多余的背景切掉
-</code></pre><h4 id="background-size"><a href="#background-size" class="headerlink" title="background-size"></a><strong>background-size</strong></h4><pre><code>* 设置背景的大小,通过这个属性可以使用多张图片作为背景,关于如何设置多张图片,可以查看`多重背景`
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">/* 宽度10 高度根据宽度计算 */</div><div class="line">background-size: 10px;</div><div class="line">/* 宽度10 高度 10 */</div><div class="line">background-size: 10px 10px;</div><div class="line">/* 背景图片原始大小 */</div><div class="line">background-size: auto;</div><div class="line">/* 背景图片原比例缩放到完全填满 可能会超出 */</div><div class="line">background-size: cover;</div><div class="line">/* 背景图片原比例缩放到 高度 或者宽度 跟容器一样 可能会有空白 */</div><div class="line">background-size: contain;</div></pre></td></tr></table></figure>
+</code></pre><h4 id="background-size"><a href="#background-size" class="headerlink" title="background-size"></a><strong>background-size</strong></h4><pre><code>* 设置背景图片的大小,通过这个属性可以使用多张图片作为背景,关于如何设置多张图片,可以查看`多重背景`
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">/* 支持直接指定具体的大小 */</div><div class="line">/* 宽度10 高度根据宽度计算 */</div><div class="line">background-size: 10px;</div><div class="line">/* 宽度10 高度 10 */</div><div class="line">background-size: 10px 10px;</div><div class="line"></div><div class="line">/* 背景图片原始大小 */</div><div class="line">background-size: auto;</div><div class="line"></div><div class="line">/* 背景图片原比例缩放到完全填满 可能会超出 */</div><div class="line">/* cover  直接等比例放大图片,直到两边都顶格.如果图片由于比例问题出现超出范围的情况,会出现图片缺失的问题,因为出去的图片会被切掉*/</div><div class="line">background-size: cover;</div><div class="line"></div><div class="line">/* 背景图片原比例缩放到 高度 或者宽度 跟容器一样 可能会有空白 */</div><div class="line">/* contain  等比例放大,某一边顶格 立刻停止放大*/</div><div class="line">background-size: contain;</div><div class="line"></div><div class="line">/*连写时加`/`  例如:background: 图片 repeat 位置 /大小 */</div></pre></td></tr></table></figure>
 <h4 id="background-repeat"><a href="#background-repeat" class="headerlink" title="background-repeat"></a><strong>background-repeat</strong></h4><pre><code>* 在原来只能设置平铺,不平铺的基础上,增加了两个属性,让我们在设置背景图时更为灵活
 * **示例:**
 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/* 自动缩放 直到填满 */</div><div class="line">background-repeat:round;</div><div class="line">/* 两个方法都缩放,直到某一边充满容器为止 */</div><div class="line">background-repeat:space;</div></pre></td></tr></table></figure>
-<h4 id="background-size-1"><a href="#background-size-1" class="headerlink" title="background-size"></a>background-size</h4><blockquote>
-<p>设置图片大小,顾名思义就是图片大小而已</p>
-</blockquote>
 <h4 id="background-origin"><a href="#background-origin" class="headerlink" title="background-origin"></a>background-origin</h4><blockquote>
 <p>这个属性设置的是背景图片开始的位置</p>
 </blockquote>
@@ -207,7 +199,7 @@
 <li><p><strong>核心代码如下:</strong><br>下面只列举了div的样式</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">			<span class="attribute">background-image</span>:<span class="built_in">url</span>(<span class="string">'img/01.jpg'</span>);</div><div class="line">			<span class="attribute">background-repeat</span>: no-repeat;</div><div class="line">			<span class="attribute">background-size</span>: <span class="number">50px</span> <span class="number">50px</span>;</div><div class="line">			<span class="attribute">background-origin</span>:可选值为border-box,padding-box,content-box</div><div class="line">			                </div><div class="line">	&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p><strong>border-box:</strong> 从边线开始</p>
+<li><p><strong>border-box:</strong> 从边框边线的位置开始</p>
 </li>
 </ul>
 <p><img src="imgs/image_bg1.png" alt="border-box"></p>
@@ -219,8 +211,12 @@
 <li><strong>content-box</strong> 从内容开始</li>
 </ul>
 <p><img src="imgs/image_bg3.png" alt="content-box"></p>
+<ul>
+<li><strong>复合写法</strong> 直接 在末尾 添加 background-origin 属性即可<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">background: url(&apos;img/lkw.jpg&apos;)no-repeat center/ cover content-box;</div></pre></td></tr></table></figure>
+</li>
+</ul>
 <h2 id="多重背景"><a href="#多重背景" class="headerlink" title="多重背景"></a>多重背景</h2><blockquote>
-<p><code>background</code>这个属性在CSS1中就推出了，在CSS3中经过修改，可以通过<code>逗号,</code>的方式添加多个背景。</p>
+<p><code>background</code>这个属性在CSS1中就推出了，在CSS3中经过修改，可以通过<code>逗号,</code>的方式添加多个背景。<br>background 在设置背景的时候 对于 过渡属性transition的支持 较差</p>
 </blockquote>
 <h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><blockquote>
 <p><code>background</code>是复合属性,可以添加多个值,编写的时候需要注意顺序</p>
@@ -230,7 +226,7 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">/* 复合写法 */</div><div class="line">background:url(图片地址) 填充方式 固定方式 位置/大小 显示原点 裁剪位置 背景颜色.</div><div class="line"></div><div class="line"></div><div class="line">/* 多图片 使用逗号分隔*/</div><div class="line">background:图片1,</div><div class="line">           图片2,</div><div class="line">           图片3.</div><div class="line">           </div><div class="line">/* 具体代码 */</div><div class="line">background: url(&apos;image/01.jpg&apos;) no-repeat  200px 300px,</div><div class="line">			url(&apos;image/02.jpg&apos;) no-repeat  100px 200px/100px 100px;</div></pre></td></tr></table></figure>
 <h2 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h2><blockquote>
-<p>注意渐变产生的是<code>图像</code>,换句话来说,所有可以设置<code>图像</code>的地方都能够使用它,能够减少我们页面图片的使用,兼容性不错.</p>
+<p>渐变需要设置给元素的图片属性,比如 background 或者 background-image.<br>注意渐变产生的是<code>图像</code>,换句话来说,所有可以设置<code>图像</code>的地方都能够使用它,能够减少我们页面图片的使用,兼容性不错.</p>
 </blockquote>
 <h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><blockquote>
 <p>顾名思义,就是朝着某个方向发生进行渐变</p>
@@ -238,7 +234,7 @@
 <ul>
 <li><strong>语法:</strong></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">/*语法组合方式 可以添加多个颜色*/</div><div class="line">background-image: linear-gradient(方向,开始颜色 开始位置 ,颜色2 开始位置,颜色3 开始位置.....);</div><div class="line"></div><div class="line"></div><div class="line">/* 具体代码  */</div><div class="line">/* 朝着 右上角 从红色到黄色*/</div><div class="line">background-image: linear-gradient(to top left,red,yellow);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 从红色到黄色*/</div><div class="line">background-image: linear-gradient(45deg,red,yellow);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色,黄色,绿色*/</div><div class="line">background-image: linear-gradient(45deg,red,yellow,green);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色到 10px结束 黄色从 20px开始 */</div><div class="line">background-image: linear-gradient(45deg,red 10px,yellow 20px);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色到10%结束 黄色从 20%开始 */</div><div class="line">background-image: linear-gradient(45deg,red 10%,yellow 20%);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">/*语法组合方式1 可以添加多个颜色*/</div><div class="line">background-image: linear-gradient(方向,开始颜色 开始位置 ,颜色2 开始位置,颜色3 开始位置.....);</div><div class="line"></div><div class="line"></div><div class="line">/* 具体代码  */</div><div class="line">/* 朝着 右上角 从红色到黄色*/</div><div class="line">background-image: linear-gradient(to top left,red,yellow);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 从红色到黄色*/</div><div class="line">background-image: linear-gradient(45deg,red,yellow);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色,黄色,绿色*/</div><div class="line">background-image: linear-gradient(45deg,red,yellow,green);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色到 10px结束 黄色从 20px开始 */</div><div class="line">background-image: linear-gradient(45deg,red 10px,yellow 20px);</div><div class="line"></div><div class="line">/* 朝着 顺时针45度 红色到10%结束 黄色从 20%开始 */</div><div class="line">background-image: linear-gradient(45deg,red 10%,yellow 20%);</div></pre></td></tr></table></figure>
 <ul>
 <li><strong>注意:</strong><ul>
 <li>如果上一个颜色的结束,跟下一个颜色的开始相等,那么不会出现过度</li>
@@ -247,6 +243,9 @@
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">background-image: linear-gradient(45deg,red 10%,yellow 10%);</div></pre></td></tr></table></figure>
+<pre><code>* 渐变在谷歌浏览器中的过渡效果(transition)不全部支持,ie中支持过渡,所以实际工作中,不会这么用
+* 渐变 在谷歌浏览器中可以使用background-position和transition来实现动画效果
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/*语法组合方式2 */</div><div class="line">background-image: linear-gradient(方向,颜色1 从0开始直到某个值 ,颜色2 从某个值开始,颜色2 到某个值结束,.....,最后一个颜色 从某个值开始直到100%);</div><div class="line"></div><div class="line">/* 具体代码  */</div><div class="line">background-image: linear-gradient(64deg,yellow 33.33% ,green 33.33%,green 66.66%,yellow 66.66%);</div></pre></td></tr></table></figure>
 <h3 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h3><blockquote>
 <p>指的是以某个点作为圆心,向四周扩散的渐变</p>
 </blockquote>
@@ -263,7 +262,8 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">background-image: radial-gradient(100px,red 10%,yellow 10%);</div></pre></td></tr></table></figure>
 <h2 id="图片边框"><a href="#图片边框" class="headerlink" title="图片边框"></a>图片边框</h2><blockquote>
-<p>在没有<code>border-image</code>属性之前,元素边框的设置就是各种不同分隔的点,但是当你掌握了这个属性以后,还是能够做出一些精美的效果的</p>
+<p>兼容性 较差,实际开发的时候 为了保证 用户 起码有一个 最基本的相框,会先设置一个 border属性,当浏览器不支持 border-image属性时 会使用默认的相框来显示<br>如果不设置border属性, 那么 就无法使用 图片相框<br>图片边框 默认的宽度 是 border的宽度</p>
+<p>在没有<code>border-image</code>属性之前,元素边框的设置就是各种不同分隔的点,但是当你掌握了这个属性以后,还是能够做出一些精美的效果的<br><code>border-image</code>用来代替<code>border-style</code> 值的。值得注意的是假如 border-image 值是none的话，那么背景图像将不会显示，同时， 将会显示border-style的值。 </p>
 </blockquote>
 <h3 id="完整写法"><a href="#完整写法" class="headerlink" title="完整写法"></a>完整写法</h3><blockquote>
 <p>同样隶属于<code>border家族</code>,<code>border-image</code>支持简写</p>
@@ -282,23 +282,23 @@
 <tbody>
 <tr>
 <td>border-image-source</td>
-<td>图片路径(url)</td>
+<td>用在边框的图片的路径。(url)</td>
 </tr>
 <tr>
 <td>border-image-slice</td>
-<td>图片切片</td>
+<td>图片边框向内偏移。</td>
 </tr>
 <tr>
 <td>border-image-width</td>
-<td>图片宽度</td>
+<td>图片边框的宽度。</td>
 </tr>
 <tr>
 <td>border-image-outset</td>
-<td>图片外凸</td>
+<td>边框图像区域超出边框的量。</td>
 </tr>
 <tr>
 <td>border-image-repeat</td>
-<td>图片重复</td>
+<td>图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。</td>
 </tr>
 </tbody>
 </table>
@@ -313,8 +313,11 @@
 <li><p><strong>示例代码:</strong></p>
 </li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">            <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>);</div><div class="line">            &#125;</div><div class="line">            <span class="comment">/*如果只是单纯的设置该属性,真的很难看*/</span></div></pre></td></tr></table></figure>
-<h4 id="border-image-slice属性"><a href="#border-image-slice属性" class="headerlink" title="border-image-slice属性"></a>border-image-slice属性</h4><ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">            <span class="attribute">border</span>:<span class="number">20px</span> solid <span class="number">#000</span>; </div><div class="line">            <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>);</div><div class="line">            &#125;</div><div class="line">            <span class="comment">/*如果只是单纯的设置该属性,真的很难看*/</span></div></pre></td></tr></table></figure>
+<h4 id="border-image-slice属性"><a href="#border-image-slice属性" class="headerlink" title="border-image-slice属性"></a>border-image-slice属性</h4><blockquote>
+<p>指定边框图像顶部、右侧、底部、左侧内偏移量。</p>
+</blockquote>
+<ul>
 <li><p><strong>值:</strong></p>
 <ul>
 <li>1-4个值(不需要单位),对应的关系跟margin一致</li>
@@ -328,39 +331,49 @@
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">          <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border_image_2.png"</span>);</div><div class="line">          <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
 <ul>
-<li><strong>工作原理:</strong><ul>
-<li>这个属性设置了以后就能够看到效果了,这里我们用这样图片作为演示<br></li>
+<li><p><strong>工作原理:</strong></p>
+<ul>
+<li><p>这个属性设置了以后就能够看到效果了,这里我们用这样图片作为演示</p>
+<p><img src="imgs\borderimg_8.gif" alt="borderimg_8"></p>
+</li>
 </ul>
+</li>
+<li><p>我们设置的值,相当于将这张图片切割为<code>九宫格</code>,这张图片的分辨率为<code>81*81</code> 其中<code>81=27*3</code></p>
+</li>
+<li><p>九宫格切法为</p>
+<p><img src="imgs/borderimg_9.png" alt="borderimg_9"></p>
 </li>
 </ul>
 <ul>
-<li>我们设置的值,相当于将这张图片切割为<code>九宫格</code>,这张图片的分辨率为<code>81*81</code> 其中<code>81=27*3</code></li>
-<li>九宫格切法为<br></li>
-</ul>
+<li><p>当我们使用图片设置为边框时</p>
 <ul>
-<li>当我们使用图片设置为边框时<ul>
-<li>保证四个角不变,根据图片的拉伸效果进行改变</li>
+<li><p>保证四个角不变,根据图片的拉伸效果进行改变<br><img src="imgs\bdi_11.png" alt="bdi_11"></p>
+<p><img src="imgs\bdi_13.png" alt="bdi_13"></p>
+</li>
 </ul>
 </li>
 </ul>
-<p>​    </p>
 <ul>
 <li><strong>注:</strong>如果使用的是百分比,那么切割的时候就是按照总宽度的百分比来计算,其他的都是一致的</li>
+<li>slice不允许设置负值，设置负值和设置大于盒子的高度或者宽度都被100%</li>
+<li>slice切过的区域有可能会重叠，如果右切和左切的值之和≥盒子的宽度，那么顶部区域(5号)和底部区域（7号）为空白，反之亦然。</li>
 </ul>
 <h4 id="border-image-width属性"><a href="#border-image-width属性" class="headerlink" title="border-image-width属性"></a>border-image-width属性</h4><ul>
 <li><strong>值:</strong><ul>
 <li>可选</li>
 <li>1-4个值,单位为(px,em,%),对应关系跟<code>margin</code>一致</li>
-<li>设置图片边框的宽度</li>
-<li>设置了宽度以后,以该宽度为准</li>
 <li>作用:设置图片边框的宽度</li>
+<li>图片边框 默认的宽度 是 border的宽度</li>
+<li>设置了宽度以后,以该宽度为准</li>
 <li><strong>注:</strong><ul>
 <li>在<code>chrome</code>中使用有异常,如果不设置<code>border</code>的宽度,就无法使用该属性</li>
 </ul>
 </li>
 </ul>
 </li>
+<li><strong>示例代码</strong></li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.border-image&#123; </div><div class="line">            border:20px solid #000;  //盒子边框宽度为20px</div><div class="line">            border-image-source:url(border.png); </div><div class="line">            border-image-width:27px 1 10% 27px; </div><div class="line">            /*边框图片宽度设置为top:27px,right:1倍,bottom:10%,left:27px，因此这些值将代替20px成为图片边框宽度。*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="border-image-outset属性"><a href="#border-image-outset属性" class="headerlink" title="border-image-outset属性"></a>border-image-outset属性</h4><ul>
 <li><p><strong>值:</strong></p>
 <ul>
@@ -376,6 +389,7 @@
 </li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">       <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border.png"</span>);</div><div class="line">       <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">       <span class="attribute">border-image-width</span>: <span class="number">27px</span>;</div><div class="line">       <span class="attribute">border-image-outset</span>: <span class="number">27px</span>;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<p><img src="imgs\bdi_15.png" alt="bdi_15"></p>
 <h4 id="border-image-repeat属性"><a href="#border-image-repeat属性" class="headerlink" title="border-image-repeat属性"></a>border-image-repeat属性</h4><ul>
 <li><strong>值:</strong><ul>
 <li>stretch(拉伸默认) 或 repeat(重复) 或 round(环绕)</li>
@@ -385,40 +399,124 @@
 <ul>
 <li><strong>示例代码:</strong></li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">           <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border.png"</span>);</div><div class="line">           <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">           <span class="attribute">border-image-width</span>: <span class="number">27px</span>;</div><div class="line">           <span class="attribute">border-image-outset</span>: <span class="number">27px</span>;</div><div class="line">           <span class="comment">/*border-image-repeat: repeat;*/</span></div><div class="line">           <span class="attribute">border-image-repeat</span>: stretch;</div><div class="line">           <span class="comment">/*border-image-repeat: round;*/</span></div><div class="line">       &#125;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.borImage</span>&#123;</div><div class="line">           <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"img/border.png"</span>);</div><div class="line">           <span class="attribute">border-image-slice</span>: <span class="number">27</span> ;</div><div class="line">           <span class="attribute">border-image-width</span>: <span class="number">27px</span>;</div><div class="line">           <span class="attribute">border-image-outset</span>: <span class="number">27px</span>;</div><div class="line">  			<span class="comment">/*repeat 只是复制粘贴,可能出现缺角的情况*/</span></div><div class="line">           <span class="comment">/*border-image-repeat: repeat;*/</span></div><div class="line">  </div><div class="line">  			<span class="comment">/*默认的是 stretch 直接拉伸图片,容易失真*/</span></div><div class="line">           <span class="attribute">border-image-repeat</span>: stretch;</div><div class="line">  </div><div class="line">  			<span class="comment">/*可以设置为 round 让他平铺,会考虑图片完整性*/</span></div><div class="line">           <span class="comment">/*border-image-repeat: round;*/</span></div><div class="line">       &#125;</div></pre></td></tr></table></figure>
+<p><img src="imgs\bdi_16.png" alt="bdi_16"></p>
 <h2 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h2><blockquote>
-<p>CSS3中最让人激动的属性之一,基本上可以实现<code>所有</code>CSS属性的动画效果</p>
+<p>通过过渡transition，可以让web前端开发人员不需要javascript就可以实现简单的动画交互效果。</p>
 </blockquote>
-<h3 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h3><blockquote>
-<p>帧动画的本质其实就是画面一张张的切换,由于速度关系,肉眼分辨不出,所以看起来就是连续的画面,<code>transition</code>干的,其实就是类似的事情<br>![图片1.png-186.2kB][2]</p>
-</blockquote>
+<h3 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h3><ul>
+<li>帧动画的本质其实就是画面一张张的切换,由于速度关系,肉眼分辨不出,所以看起来就是连续的画面,<code>transition</code>干的,其实就是类似的事情</li>
+<li>需要注意的是,如果发现没有过渡效果,可能是没有一个 起始值</li>
+<li>过渡transition是一个复合属性，包括transition-property、transition-duration、transition-timing-function、transition-delay这四个子属性。通过这四个子属性的配合来完成一个完整的过渡效果</li>
+<li>IE9-不支持该属性，safari3.1-6、IOS3.2-6.1、android2.1-4.3需要添加-webkit-前缀；而其余高版本浏览器支持标准写法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transition-property</td>
+<td>过渡属性(默认值为all)</td>
+</tr>
+<tr>
+<td>transition-duration</td>
+<td>过渡持续时间(默认值为0s)(必需值且不能为0)</td>
+</tr>
+<tr>
+<td>transiton-timing-function</td>
+<td>过渡函数(默认值为ease函数)</td>
+</tr>
+<tr>
+<td>transition-delay</td>
+<td>过渡延迟时间(默认值为0s)</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><strong>语法:</strong></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">/*语法组合方式*/</div><div class="line">transition:过渡CSS属性 持续时间 动画方式 延迟时间;</div><div class="line"></div><div class="line">/* 多属性过渡组合写法  通过逗号分隔*/</div><div class="line">transition:过渡1,过渡2....</div><div class="line"></div><div class="line">/*具体代码*/</div><div class="line"></div><div class="line">/* 所有属性 1s动画 ease-in动画方式 延迟1s*/</div><div class="line">transition: all 1s ease-in 1s;</div><div class="line"></div><div class="line">/*</div><div class="line">top属性 1s动画 ease-in动画方式 </div><div class="line">left属性 1s动画 ease-out动画方式 延迟1s</div><div class="line">width属性 1s动画 liner动画方式 延迟2s</div><div class="line">height属性 1s动画 ease-in-out动画方式 延迟3s </div><div class="line">background-Color属性 1s动画 ease动画方式 延迟4s </div><div class="line">*/</div><div class="line">transition: top 1s ease-in,</div><div class="line">			left 1s  ease-out 1s,</div><div class="line">			width 1s  ease-liner 2s,</div><div class="line">			height 1s  ease-in-out 3s;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">/*语法组合方式*/</div><div class="line">transition:过渡CSS属性 持续时间 动画方式 延迟时间;</div><div class="line">/*transition-duration和transition-delay都是时间。</div><div class="line">当两个时间同时出现时，第一个是transition-duration，第二个是transition-delay；</div><div class="line">当只有一个时间时，它是transition-duration，而transition-delay为默认值0*/</div><div class="line"></div><div class="line">/* 多属性过渡组合写法  通过逗号分隔*/</div><div class="line">/* 空格隔开的代表不同属性的四个关于过渡的子属性*/</div><div class="line">transition:过渡1,过渡2....</div><div class="line"></div><div class="line">/*具体代码*/</div><div class="line"></div><div class="line">/* 所有属性 1s动画 ease-in动画方式 延迟1s*/</div><div class="line">transition: all 1s ease-in 1s;</div><div class="line"></div><div class="line">/*</div><div class="line">top属性 1s动画 ease-in动画方式 </div><div class="line">left属性 1s动画 ease-out动画方式 延迟1s</div><div class="line">width属性 1s动画 liner动画方式 延迟2s</div><div class="line">height属性 1s动画 ease-in-out动画方式 延迟3s </div><div class="line">background-Color属性 1s动画 ease动画方式 延迟4s </div><div class="line">*/</div><div class="line">transition: top 1s ease-in,</div><div class="line">			left 1s  ease-out 1s,</div><div class="line">			width 1s  ease-liner 2s,</div><div class="line">			height 1s  ease-in-out 3s;</div></pre></td></tr></table></figure>
+<h3 id="transition-property-过渡属性"><a href="#transition-property-过渡属性" class="headerlink" title="transition-property 过渡属性"></a>transition-property 过渡属性</h3><ul>
+<li>值:<ul>
+<li>none: 没有指定任何样式</li>
+<li>all: 默认值，表示指定元素所有支持transition-property属性的样式</li>
+<li>transition-property: 可过渡的样式，可用逗号分开写多个样式<ul>
+<li>可过渡的样式<blockquote>
+<p>不是所有的CSS样式值都可以过渡，只有具有中间值的属性才具备过渡效果</p>
+</blockquote>
+</li>
+<li>颜色: color background-color border-color outline-color</li>
+<li>位置: backround-position left right top bottom</li>
+<li>长度: <ul>
+<li>[1]max-height min-height max-width min-width height width</li>
+<li>[2]border-width margin padding outline-width outline-offset</li>
+<li>[3]font-size line-height text-indent vertical-align </li>
+<li>[4]border-spacing letter-spacing word-spacing</li>
+</ul>
+</li>
+<li>数字: opacity visibility z-index font-weight zoom</li>
+<li>组合: text-shadow transform box-shadow clip</li>
+<li>其他: gradient</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="transition-duration-过渡持续时间"><a href="#transition-duration-过渡持续时间" class="headerlink" title="transition-duration 过渡持续时间"></a>transition-duration 过渡持续时间</h3><ul>
+<li>值是时间,单位是秒s或者毫秒ms</li>
+<li>该属性不能为负值</li>
+<li>默认值为0s，若为0则为无效值。所以必须带单位</li>
+<li>该值为单值时，即所有过渡属性都对应同样时间；该值为多值时，过渡属性按照顺序对应持续时间</li>
+</ul>
+<h3 id="transition-delay-过渡延迟时间"><a href="#transition-delay-过渡延迟时间" class="headerlink" title="transition-delay 过渡延迟时间"></a>transition-delay 过渡延迟时间</h3><ul>
+<li>值是时间,单位是秒s或者毫秒ms</li>
+<li>该属性若为负值，无延迟效果，但过渡元素的起始值将从0变成设定值(设定值=延迟时间+持续时间)。若该设定值小于等于0，则无过渡效果；若该设定值大于0，则过渡元素从该设定值开始完成剩余的过渡效果</li>
+</ul>
+<h3 id="transition-timing-function-过渡时间函数"><a href="#transition-timing-function-过渡时间函数" class="headerlink" title="transition-timing-function 过渡时间函数"></a>transition-timing-function 过渡时间函数</h3><blockquote>
+<p>过渡时间函数用于定义元素过渡属性随时间变化的过渡速度变化效果</p>
+</blockquote>
 <ul>
-<li><p><strong>动画方式:</strong></p>
+<li><p>取值:关键字、steps函数和bezier函数</p>
+</li>
+<li><p><strong>关键字</strong></p>
 <ul>
-<li>动画的效果如下<br>![动画曲线][3]</li>
+<li>ease: 开始和结束慢，中间快。默认值.相当于cubic-bezier(0.25,0.1,0.25,1)</li>
+<li>linear: 匀速。相当于cubic-bezier(0,0,1,1)</li>
+<li>ease-in: 开始慢。相当于cubic-bezier(0.42,0,1,1)</li>
+<li>ease-out: 结束慢。相当于cubic-bezier(0,0,0.58,1)</li>
+<li>ease-in-out: 和ease类似，但比ease幅度大。相当于cubic-bezier(0.42,0,0.58,1)</li>
+<li>step-start: 直接位于结束处。相当于steps(1,start)</li>
+<li>step-end: 位于开始处经过时间间隔后结束。相当于steps(1,end)</li>
 </ul>
 </li>
 <li><p><strong>贝塞尔曲线动画</strong></p>
 <ul>
 <li>在设置动画曲线的位置通过<code>cubic-bezier()</code>的方式进行设置</li>
-<li>[计算贝塞尔曲线在线网址][4]</li>
-<li>语法:</li>
-</ul>
+<li><a href="http://cubic-bezier.com/" target="_blank" rel="external">计算贝塞尔曲线在线网址</a></li>
+<li>语法:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/* 其中 需要传入四个值,并且每个值都是0-1的小数*/</div><div class="line">transition: top 1s cubic-bezier(0.1,0.2,0.3,0.4);</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/* 其中 需要传入四个值,并且每个值都是0-1的小数*/</div><div class="line">transition: top 1s cubic-bezier(0.1,0.2,0.3,0.4);</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>step动画</strong></p>
 <ul>
-<li><strong>step动画</strong><ul>
 <li>除了可以使用贝塞尔曲线设置外,我们还能够设置<code>过渡</code>的动画次数</li>
-<li>语法:</li>
-</ul>
+<li>语法:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/* 1s动画 每隔 1/6 s 完成一次  在每次间隔的 末尾 开始动画  */</div><div class="line">transition: top 1s steps(6,end);</div><div class="line">/* 1s动画 每隔 1/6 s 完成一次  在每次间隔的 开始 开始动画  */</div><div class="line">transition: top 1s steps(6,start);</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/* 1s动画 每隔 1/6 s 完成一次  在每次间隔的 末尾 开始动画  */</div><div class="line">transition: top 1s steps(6,end);</div><div class="line">/* 1s动画 每隔 1/6 s 完成一次  在每次间隔的 开始 开始动画  */</div><div class="line">transition: top 1s steps(6,start);</div></pre></td></tr></table></figure>
+</li>
+<li><p>steps步进函数将过渡时间划分成大小相等的时间时隔来运行</p>
+<ul>
+<li>steps步进函数为steps(<integer>[,start | end]?)</integer></li>
+<li><integer>:用来指定间隔个数(该值只能是正整数)</integer></li>
+<li>第二个参数: 该参数可选，默认是end，表示开始值保持一次；若参数为start，表示开始不保持</li>
+</ul>
+<p><img src="imgs\过渡步进函数.png" alt="过渡步进函数"></p>
+</li>
+</ul>
 <h2 id="body高度问题"><a href="#body高度问题" class="headerlink" title="body高度问题"></a>body高度问题</h2><blockquote>
 <p><code>body</code>标签其实是一个盒子,但是我们一般很少直接使用它</p>
 </blockquote>
@@ -427,13 +525,14 @@
 <ul>
 <li>当我们设置了<code>body</code>的背景颜色时,整个页面都有效果</li>
 <li>但是当我们为其添加了<code>border</code>属性时,会发现他其实是根据内容改变的大小</li>
+<li>这是因为浏览器的开发厂商 为了设置背景色建议 , 背景色设置给body 那么 就会全屏应用,但是 body的 高度 并没有发生改变</li>
 </ul>
 </li>
 <li><p>body高度设置:  </p>
 <ul>
 <li><code>body</code>的本质就是一个<code>div</code> </li>
 <li>可以直接通过<code>height</code>设置他的高度</li>
-<li>默认会根据内容变高</li>
+<li>默认是 没有高度的,他是被子元素 撑大的,所以会根据内容变高</li>
 </ul>
 </li>
 <li><p><strong>示例代码</strong></p>
@@ -463,7 +562,7 @@
 <p>主要就是三个方法</p>
 </blockquote>
 <ul>
-<li><strong>语法:</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/* translate: 移动 第二个参数不传默认为0 */</div><div class="line">transform:translate(x,y);</div><div class="line"></div><div class="line">/* scale: 缩放 传递的是比例 比如 2倍,1.5倍,0.5倍等等 */</div><div class="line">transform:scale(x,y);</div><div class="line"></div><div class="line">/*rotate: 旋转 传递的是角度  360deg等于一圈*/</div><div class="line">transform:rotate(angle);</div><div class="line">/*skew: 斜方向扭曲 传递的是角度 360deg等于一圈 第二个参数不传默认为0*/</div><div class="line">transform:skew(xAngle,yAngle);</div><div class="line"></div><div class="line">/* 多个值 通过空格分隔*/</div><div class="line">tranform:translate(10px,10px) rotate(180deg) scale(1.5,1.5);</div></pre></td></tr></table></figure>
+<li><strong>语法:</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">/* translate: 移动 第二个参数不传默认为0 */</div><div class="line">/* 建议使用transform来实现元素的变换,不会影响其他的元素*/</div><div class="line">transform:translate(x,y);</div><div class="line"></div><div class="line">/* scale: 缩放 传递的是比例 比如 2倍,1.5倍,0.5倍等等 */</div><div class="line">/* 可能会撑大body的 大小 出现滚动条*/</div><div class="line">transform:scale(x,y);</div><div class="line"></div><div class="line">/* rotate: 旋转 传递的是角度  360deg等于一圈*/</div><div class="line">transform:rotate(angle);</div><div class="line"></div><div class="line">/* skew: 斜方向扭曲 传递的是角度 360deg等于一圈 第二个参数不传默认为0*/</div><div class="line">/* 如果两个轴 扭曲的角度一致 元素会消失*/</div><div class="line">transform:skew(xAngle,yAngle);</div><div class="line"></div><div class="line">/* 多个值 通过空格分隔*/</div><div class="line">/* 移动 旋转 缩放 */</div><div class="line">tranform:translate(10px,10px) rotate(180deg) scale(1.5,1.5);</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="transform-origin"><a href="#transform-origin" class="headerlink" title="transform-origin"></a>transform-origin</h3><blockquote>
@@ -480,7 +579,7 @@
         <nav class="pagination" role="pagination">
     
     <a class="pull-left" href="/2017/01/25/04.C3-3/" style="float: left;">
-        ← css3第三天
+        ← CSS3第三天
     </a>
     
     
