@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>cookie 和 session 的使用 | Rella</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Rella">
+    <meta name="author" content="Rella">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Rella" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Angular/" class="animsition-link">Angular<small>(6)</small></a></li>
+				    
+				    <li><a href="/categories/Git/" class="animsition-link">Git<small>(3)</small></a></li>
+				    
+				    <li><a href="/categories/Gulp/" class="animsition-link">Gulp<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/JavaScript/" class="animsition-link">JavaScript<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Mac/" class="animsition-link">Mac<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Node/" class="animsition-link">Node<small>(5)</small></a></li>
+				    
+				    <li><a href="/categories/angular/" class="animsition-link">angular<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/canvas/" class="animsition-link">canvas<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/storage/" class="animsition-link">storage<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(2)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Rella</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-03-08T04:39:04.000Z" itemprop="datePublished">
+          2017-03-08
+      </time>
+    
+</span>
+                <h1>cookie 和 session 的使用</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="cookie-和-session-的使用"><a href="#cookie-和-session-的使用" class="headerlink" title="cookie 和 session 的使用"></a>cookie 和 session 的使用</h1><h2 id="cookie和session"><a href="#cookie和session" class="headerlink" title="cookie和session"></a>cookie和session</h2><ol>
+<li>Cookie通过在客户端记录信息确定用户身份，Session通过在服务器端记录信息确定用户身份</li>
+<li>当 客户端第一次请求服务端时，会创建一个Session对象，所有该客户的状态信息都保存在这个Session对象里。服务端会创建一个sessionID，并将其保存在cookie中在cookie中名为sessionID:值；当再次发送请求时，服务器会先检查req中是否有sessionID，并为其分配对应 的内容；</li>
+<li>cookie可以通过ＪＳ写入，有大小，和安全性等问题，但是方便，通过设置可以在多路径中进行访问。</li>
+<li><p>例如购物车的demo，信息就可以存储在cookie中；用户名，密码等信息可以存在session中，返回的sessionid存储在cookie中，配合使用；</p>
+</li>
+<li><p>cookie进行状态管理。http是无状态管理</p>
+</li>
+<li>sessionStorage 在同源的同窗口始终存在数据。窗口关闭，数据销毁；  </li>
+<li>url重写可以解决用户禁用cookie的情况下依然可以保持客户端和服务端的通信状态(这个是后台写的)</li>
+<li><code>document.cookie</code>可以访问cookie;</li>
+<li>cookie的格式:键值对;</li>
+<li>多个cookie之间使用分号和空格隔开;例如:<code>username=zhangsan; age=12</code>;</li>
+<li><code>document.cookie = &#39;username=zhangsan&#39;</code>在浏览器中是有缓存的,关闭浏览区可以清除;<h3 id="cookie的分类"><a href="#cookie的分类" class="headerlink" title="cookie的分类"></a>cookie的分类</h3></li>
+<li>会话cookie(session cookie ):关闭浏览器之后自动清除,但是可以增加其有效期,以下例子增加了5天的有效期。</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">date.setDate(date.getDate()+<span class="number">5</span>); </div><div class="line"><span class="built_in">document</span>.cookie=<span class="string">"username=lisi; expires="</span>+date.toGMTString();</div></pre></td></tr></table></figure>
+<ol>
+<li>持久cookie(persistant cookie ): 关闭浏览器,仍然存在。</li>
+<li>在子路径设置的cookie,在父路径下是获取不到的;反过来可以。不可以跨域获取cookie,但是可以跨页面共享;</li>
+<li><p>可以用jquery-cookie插件应用;</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"> <span class="comment">//设置cookie</span></div><div class="line"> <span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">key,value,expires</span>) </span>&#123;</div><div class="line">         <span class="built_in">document</span>.cookie = key +<span class="string">'='</span>+value+<span class="string">';expires='</span>+expires+<span class="string">"; path=/"</span>;</div><div class="line">     &#125;</div><div class="line"><span class="comment">//获得cookie</span></div><div class="line"> <span class="function"><span class="keyword">function</span> <span class="title">getCookie</span>(<span class="params">cname</span>) </span>&#123;</div><div class="line">     <span class="keyword">var</span> cookie = <span class="built_in">document</span>.cookie;</div><div class="line">     <span class="keyword">var</span> arr = cookie.split(<span class="string">'; '</span>);</div><div class="line">     <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</div><div class="line">         <span class="keyword">var</span> kv = arr[i].split(<span class="string">'='</span>);</div><div class="line">         <span class="keyword">if</span>(cname == kv[<span class="number">0</span>])&#123;</div><div class="line">             <span class="keyword">return</span> kv[<span class="number">1</span>];</div><div class="line">         &#125;</div><div class="line">     &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>encodeURLComponent</code>该方法会对url地址中的特殊字符进行编码(当参数中包含URL特殊字符的时候可以使用该方法进行编码处理);</p>
+</li>
+<li>获取sessionID<br><code>console.log($.cookie(&#39;PHPSESSID&#39;))</code>;<h3 id="cookie-使用"><a href="#cookie-使用" class="headerlink" title="$.cookie()使用"></a>$.cookie()使用</h3></li>
+<li>新添加一个cookie会话;<code>$.cookie(&#39;username&#39;,&#39;zhangsan&#39;)</code>;</li>
+<li>创建cookie并设置有效期为7天;<code>$.cookie(&#39;age&#39;,&#39;18&#39;,{expires:7})</code>;此时的cookie称作持久cookie,即<code>persistant cookie</code>;</li>
+<li>创建cookie并设置cookie的有效路径<code>$.cookie(&#39;username&#39;,&#39;lisi&#39;,{expires:7,path:&#39;/&#39;})</code>;<ul>
+<li>在默认情况下,只有cookie的页面才能读取该cookie信息,如果想让另一个页面读取该cookie信息,必须设置cookie的路径;cookie的路径用于设置能够读取cookie的顶级目录,即根目录,可以让当前项目下所有的网页都能相互读取cookie,</li>
+</ul>
+</li>
+<li><code>raw:true</code>;在读写cookie时自动使用<code>encodeURLComponen</code>进行编码和解码;</li>
+<li>删除cookie可以使用null作为cookie的值就可以<code>$.cookie(&#39;username&#39;,null)</code><h3 id="session-和-cookie之间的区别"><a href="#session-和-cookie之间的区别" class="headerlink" title="session 和 cookie之间的区别"></a>session 和 cookie之间的区别</h3></li>
+</ol>
+<ul>
+<li>共同点： 数据都是保存在浏览器端，且是同源的</li>
+<li>区别：<ol>
+<li>cookie 通过在客户端记录信息确定用户身份， 数据始终在同源的 http 请求中携带，即cookie在浏览器和服务器之间来回传递；</li>
+<li>session 通过在服务器端记录信息确定用户身份；</li>
+<li>cookie 数据还有路径(path)的概念，可以限制 cookie 只在某个另下访问。因为每次 http 请求都会携带 cookie，所以cookie 只适合保存很小的数据。</li>
+<li>http 协议是无状态协议。是无法从连接上跟踪会话的；</li>
+<li>第一次发送请求，res 会向客户端浏览器颁发一个 cookie， 客户端吧 cookie 存取来，再次访问的时候会一同提交给 服务器</li>
+<li>SessionStorage 存在于服务端的内存中；</li>
+</ol>
+</li>
+</ul>
+<h3 id="cookie-和session"><a href="#cookie-和session" class="headerlink" title="cookie 和session"></a>cookie 和session</h3><h3 id="LocalStorage-和-sessionStorage"><a href="#LocalStorage-和-sessionStorage" class="headerlink" title="LocalStorage 和 sessionStorage"></a>LocalStorage 和 sessionStorage</h3><pre><code>+ LocalStorage 对应的是 持久 Cookie
++ sessionStorage 对应的是 会话 Cookie
++ Cookie 是用来做状态保持的
+    - Cookie 的数据，浏览器会默认把 cookie 放到 请求报文中发送给服务器
++ LocalStorage 和 sessionStorage 是用来 做本地存储的，没有 Http 协议交互内容；
+</code></pre><h3 id="location的内置属性"><a href="#location的内置属性" class="headerlink" title="location的内置属性"></a>location的内置属性</h3><ul>
+<li>页面跳转<code>location.href=&#39;/index/index.html&#39;</code><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">ancestorOrigins:DOMStringList,</div><div class="line">assign:()</div><div class="line">hash:""</div><div class="line">host:"mybxg.com"</div><div class="line">hostname:"mybxg.com"</div><div class="line">href:"http://mybxg.com/index/index"</div><div class="line">origin:"http://mybxg.com"</div><div class="line">pathname:"/index/index"</div><div class="line">port:""</div><div class="line">protocol:"http:"</div><div class="line">reload:reload()</div><div class="line">replace:()</div><div class="line">search:""</div><div class="line">toString:toString()</div><div class="line">valueOf:valueOf()</div><div class="line">__proto__:Location</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a>Apache</h2><ul>
+<li>静态资源服务器</li>
+<li>项目管理软件: JIRA 禅道(跟踪工程进度更新,项目管理软件)</li>
+<li>jQuery中的return false既可以阻止默认行为也可以阻止冒泡;但是原生JS中的return false 只能阻止默认行为;</li>
+</ul>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2017/03/09/Mac上mongobd 的使用/" style="float: left;">
+        ← Mac上mongobd 的使用
+    </a>
+    
+    
+    <a class="pull-right" href="/2017/03/06/formidable插件使用/">
+        formidable插件使用 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Rella. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>NodeJS 基础 | Rella</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Rella">
+    <meta name="author" content="Rella">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Rella" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Angular/" class="animsition-link">Angular<small>(6)</small></a></li>
+				    
+				    <li><a href="/categories/Git/" class="animsition-link">Git<small>(3)</small></a></li>
+				    
+				    <li><a href="/categories/Gulp/" class="animsition-link">Gulp<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/JavaScript/" class="animsition-link">JavaScript<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Mac/" class="animsition-link">Mac<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Node/" class="animsition-link">Node<small>(5)</small></a></li>
+				    
+				    <li><a href="/categories/angular/" class="animsition-link">angular<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/canvas/" class="animsition-link">canvas<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/storage/" class="animsition-link">storage<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(2)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Rella</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-04-03T01:06:15.000Z" itemprop="datePublished">
+          2016-04-03
+      </time>
+    
+    
+    | 
+    <a href='/tags/Node/'>Node</a>
+    
+    
+</span>
+                <h1>NodeJS 基础</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="NodeJS-day01"><a href="#NodeJS-day01" class="headerlink" title="NodeJS day01"></a>NodeJS day01</h1><h2 id="Nodejs是什么："><a href="#Nodejs是什么：" class="headerlink" title="Nodejs是什么："></a>Nodejs是什么：</h2><ul>
+<li><p>解析执行JS，不包括DOM、Style等；</p>
+<ul>
+<li>是一个构建与 Chrome V8 引擎之上的一个JavaScript运行时环境</li>
+<li>Node 可以像浏览器一样去解析和执行JavaScript代码；</li>
+<li>Chrome V8引擎是所有浏览器里面解析和执行 JS 代码块 最快的；</li>
+<li>在Node中，没有界面，不再需要关心HTML、CSS</li>
+<li>和DOM style没有任何关系；只需要关注JavaScript；ECMAScript；<ul>
+<li>文件操作</li>
+<li>网络操作</li>
+<li>让JavaScript代码具有了服务器编程能力</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>NodeJS的特性：</p>
+<ul>
+<li>事件驱动 </li>
+<li>非阻塞IO模型：大量的异步编程接口；NodeJS中充满了类似于ajax 一样的ＡＰＩ，回答函数；</li>
+<li>快平台</li>
+<li>单线程</li>
+<li>轻量和高效</li>
+</ul>
+</li>
+<li>npm 是世界上最大的开源库生态系统<ul>
+<li>npm 上发布的第三方包已经接近35万个之多</li>
+</ul>
+</li>
+</ul>
+<h2 id="NodeJS可以做什么"><a href="#NodeJS可以做什么" class="headerlink" title="NodeJS可以做什么"></a>NodeJS可以做什么</h2><ul>
+<li>NodeJS为JavaScript提供了服务端编程的能力（不处理UI）；<ul>
+<li>Java、PHP、Python、。net、Ruby等 做的Node都能做</li>
+<li>网站开发，提供网站服务端</li>
+<li>具有与数据库交互的能力</li>
+<li>移动应用，网络游戏等需要服务的地方Node都可以做；</li>
+<li>CLI(Command Line Interface)命令行接口程序<ul>
+<li>例如：Gulp、hexo、git等</li>
+<li>Node 具有开发命令行工具的能力；<h2 id="Node的应用场景"><a href="#Node的应用场景" class="headerlink" title="Node的应用场景"></a>Node的应用场景</h2></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Node是前端进阶必备的一个能力；</li>
+<li>对IO操作比较频繁；IO：input、 output<ul>
+<li>文件读取</li>
+<li>和数据库交互：网络数据IO<h2 id="一些资源"><a href="#一些资源" class="headerlink" title="一些资源"></a>一些资源</h2></li>
+</ul>
+</li>
+<li>朴灵：《深入浅出Node.js》原理性，阿里出品</li>
+<li>阮一峰的Node.js</li>
+<li>Node入门，nodebegin.org/index-zn-cn 强烈推荐</li>
+</ul>
+<h2 id="Node-程序的运行"><a href="#Node-程序的运行" class="headerlink" title="Node 程序的运行"></a>Node 程序的运行</h2><ol>
+<li>在终端的任何目录下输入<code>node</code>命令，都可以执行<code>node.exe</code>程序<ul>
+<li>核心就在于通过操作系统</li>
+</ul>
+</li>
+<li>参数</li>
+</ol>
+<h2 id="Node中的ECMAScript"><a href="#Node中的ECMAScript" class="headerlink" title="Node中的ECMAScript"></a>Node中的ECMAScript</h2><ol>
+<li>Node中的window 是 global<h2 id="Node核心模块"><a href="#Node核心模块" class="headerlink" title="Node核心模块"></a>Node核心模块</h2></li>
+<li>Node把绝大多数的API，都封装到了一份具名的核心模块了，例如文件操作的<code>fs</code>; 网络操作的<code>http</code>等；</li>
+<li>也就是说，使用核心模块，必须先加载才可以使用；</li>
+</ol>
+<blockquote>
+<p>核心模块以位移的标识名称进行暴露，使用时，通过<code>require</code>进行引入</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = <span class="built_in">require</span>(<span class="string">'唯一标识的模块名称'</span>)；</div></pre></td></tr></table></figure>
+<h3 id="在Node中使用第三方包"><a href="#在Node中使用第三方包" class="headerlink" title="在Node中使用第三方包"></a>在Node中使用第三方包</h3><ol>
+<li>通过 npm 下载</li>
+<li>通过 rquire 函数引包</li>
+<li>查看第三方的API，try-try-see;</li>
+</ol>
+<h3 id="用户自定义模块"><a href="#用户自定义模块" class="headerlink" title="用户自定义模块"></a>用户自定义模块</h3><ol>
+<li>在Node中，也提供了一种所谓的JavaScript模块化解决方案，（类似以requireJS）；</li>
+</ol>
+<h1 id="小知识点"><a href="#小知识点" class="headerlink" title="小知识点"></a>小知识点</h1><ol>
+<li>chrome浏览器每次会发送两次请求，一次请求icon；一次请求数据；</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/a</div><div class="line">/favicon.ico</div></pre></td></tr></table></figure>
+<ol>
+<li>Node 获取请求路径 var url = res.url;</li>
+<li>不同的响应头</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//HTML格式，网页面中写数据的时候不会出现中文乱码；</span></div><div class="line">res.writeHead(<span class="number">200</span>,&#123;</div><div class="line">        <span class="string">'Content-Type'</span>:<span class="string">'text/html;charset=utf-8'</span></div><div class="line">    &#125;)；</div><div class="line">    res.writeHead(<span class="number">200</span>,&#123;</div><div class="line">    <span class="comment">//响应的内容是简单文本</span></div><div class="line">    <span class="string">'Content-Type'</span>:<span class="string">'text/plain; charset=utf-8'</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ol>
+<li><code>./data/a.txt = data.a.txt</code>;</li>
+<li>如果 fs.readFile(‘/data/a.txt’);则去脚本文件的根路径下面去找 C/data/a.txt文件</li>
+<li>数组转换成字符串 JSON.stringfy(array);</li>
+<li><code>res.end(data)</code>=== <code>res.write(data) res.end()</code>;</li>
+</ol>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/04/09/title_ Mac操作系统总结/" style="float: left;">
+        ← Mac操作系统总结
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/03/24/Github 使用/">
+        github使用 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Rella. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>

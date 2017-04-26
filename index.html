@@ -87,6 +87,33 @@
             </li>
             
             
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Angular/" class="animsition-link">Angular<small>(6)</small></a></li>
+				    
+				    <li><a href="/categories/Git/" class="animsition-link">Git<small>(3)</small></a></li>
+				    
+				    <li><a href="/categories/Gulp/" class="animsition-link">Gulp<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/JavaScript/" class="animsition-link">JavaScript<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Mac/" class="animsition-link">Mac<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Node/" class="animsition-link">Node<small>(5)</small></a></li>
+				    
+				    <li><a href="/categories/angular/" class="animsition-link">angular<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/canvas/" class="animsition-link">canvas<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/storage/" class="animsition-link">storage<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(2)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
             
             <li>
                 <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
@@ -204,11 +231,11 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2017/01/25/04.C3-3/">CSS3第三天</a></h3>
+                    <h3><a href="/2017/03/22/Angular项目中实现图片懒加载/">Angular项目中实现图片懒加载</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2017-01-25T10:42:19.280Z" itemprop="datePublished">
-          2017-01-25
+      <time datetime="2017-03-21T16:39:04.000Z" itemprop="datePublished">
+          2017-03-22
       </time>
     
 </span>
@@ -217,21 +244,17 @@
                 <div class="col-md-8">
                     <p>
                       
-                        图片边框
-在没有border-image属性之前,元素边框的设置就是各种不同分隔的点,当时当你掌握了这个属性以后,还是能够做出一些精美的效果的
+                        
+这两天一直纠结angular的图片懒加载插件中无法自拔。在使用过程深深感到js学艺不精的痛苦，想修改源码又不会修改，只能尽力压榨如何使用插件上。这里主要谈谈在使用插件的过程遇到的一些问题。
 
-完整写法
-同样隶属于border家族,border-image支持简写
-
-
-示例代码:
-
-123.borImage&#123;            border-image: url("img/border_image_2.png") 17 / 17px / 17px round;     
+问题1：图片加载一排之后不再加载
+使用angular-imglazyload这个插件，主要是因为这个插件小，并且不依赖jQuery库，整合到项目上运行，竟然发现只有第一排加载了，滚动后都没有响应。下面是我的代码部分：
+1234&lt;div ng
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2017/01/25/04.C3-3/">Read More...</a>
+                        <a href="/2017/03/22/Angular项目中实现图片懒加载/">Read More...</a>
                     </p>
                     
                 </div>
@@ -243,11 +266,11 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2017/01/25/03.C3-2/"></a></h3>
+                    <h3><a href="/2017/03/18/sessionID 和 cookie/">cookie机制和session机制的区别</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2017-01-25T10:42:19.277Z" itemprop="datePublished">
-          2017-01-25
+      <time datetime="2017-03-17T16:39:04.000Z" itemprop="datePublished">
+          2017-03-18
       </time>
     
 </span>
@@ -256,19 +279,20 @@
                 <div class="col-md-8">
                     <p>
                       
-                        C3第二天背景
-在CSS3中针对Background推出了多个新增的用法,接下来我们看看这些新的属性
-新增属性部分是有修改的,部分是新增的,其中CSS3中新增了很多好用的属性
+                        一、cookie机制和session机制的区别
+
+具体来说cookie机制采用的是在客户端保持状态的方案，而session机制采用的是在服务器端保持状态的方案。
+同时我们也看到，由于才服务器端保持状态的方案在客户端也需要保存一个标识，所以session机制可能需要借助于cookie机制来达到保存标识的目的，但实际上还有其他选择
 
 
-backGround-clip:* 将背景设置好后,通过这个属性可以把多余的背景切掉
-background-size* 设置背景图片的大小,通过这个属性可以使用多张图片作为背景,关于如何设置多张图片,可以查看`多重背景`
-1234567891011121314
+二、会话cookie和持久cookie的区别
+
+如果不设置过期时间，则表示这个cookie生命周期为浏览器
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2017/01/25/03.C3-2/">Read More...</a>
+                        <a href="/2017/03/18/sessionID 和 cookie/">Read More...</a>
                     </p>
                     
                 </div>
@@ -280,17 +304,12 @@ background-size* 设置背景图片的大小,通过这个属性可以使用多�
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2017/01/25/02.C3-1/">css3第一天</a></h3>
+                    <h3><a href="/2017/03/14/Gulp基本使用/">Gulp基本使用</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2017-01-25T10:42:19.274Z" itemprop="datePublished">
-          2017-01-25
+      <time datetime="2017-03-14T04:39:04.000Z" itemprop="datePublished">
+          2017-03-14
       </time>
-    
-    
-    | 
-    <a href='/tags/CSS3/'>CSS3</a>
-    
     
 </span>
                     </span>
@@ -298,24 +317,21 @@ background-size* 设置背景图片的大小,通过这个属性可以使用多�
                 <div class="col-md-8">
                     <p>
                       
-                        C3初识CSS3帮助手册
-CSS3一直在持续进化中，我们可以通过帮助文档去学习CSS3,下面把常用的文档罗列一下：
+                        Gulp的基本使用数据双向绑定
+则在该ngCtl的作用域内的HTML标签, 其值或者操作都可以通过$scope的方式跟js中的属性和方法进行绑定. 
 
+脏值检测
+当数值发生变化时，触发了一个事件，去调用这个脏值检测的函数；
+路径与目录的关系；
 
-w3school_css3
-Mozilla开发者网络
-CSS参考手册 
-
-CSS3简介
-CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼容性问题,所以并不是所有的浏览器都能够使用不过这并不影响我们学习以及使用它
-
-前缀:
-浏览器厂商在实现CSS3的效果时,有的还有的还在测试阶段,为了保证显示效果,我们在使用
+php中数据格式的转换
+在PHP中，将数组以json对象的格式进行输出， json_encode(array);
+在PHP中，将对象形式的数据转换成数组， json_decode(obj,tru
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2017/01/25/02.C3-1/">Read More...</a>
+                        <a href="/2017/03/14/Gulp基本使用/">Read More...</a>
                     </p>
                     
                 </div>
@@ -327,11 +343,11 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2017/01/17/01.H5one/"></a></h3>
+                    <h3><a href="/2017/03/10/MVC/">MVC</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2017-01-17T08:56:35.243Z" itemprop="datePublished">
-          2017-01-17
+      <time datetime="2017-03-10T00:50:15.000Z" itemprop="datePublished">
+          2017-03-10
       </time>
     
 </span>
@@ -340,23 +356,21 @@ CSS3为我们提供了很多让人兴奋的新样式,但是由于浏览器的兼
                 <div class="col-md-8">
                     <p>
                       
-                        H 5 初识DOCTYPE声明DOCTYPE的作用
-一个标准的HTML文档,开头第一句都应该是&lt;!DOCTYPE&gt;,根据&lt;HTML&gt;版本不同,写法上会有所差别.
+                        小知识点
+绝大多数网站目前都是 服务端渲染 + 客户端渲染 相结合；
+交互方式： 异步请求 和 同步请求；
+服务端：请求 + 处理 + 响应；
+URL：http://www.example.com/a/b/c?name=lisi$age=18#123;
+端口号之后的 / 是用来个主机名端口号 做区分的；
+请求路径URL就是一个标识，在真是的文件中不一定有对应的实际目录；URL标识是由开发人员自己制定的；
 
 
-tips:
-DOCTYPE并不是HTML标签,而是一个声明
-作用:告诉浏览器按照哪个规则去解析页面
-
-
-
-DOCTYPE写法-HTML4中
-在HTML4.01中有三种DOCTYPE声明,但是随着技术的更新,这几种写法很少使用了,在一些老的网站中才可以
+图片的请求方式永远是 pos
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2017/01/17/01.H5one/">Read More...</a>
+                        <a href="/2017/03/10/MVC/">Read More...</a>
                     </p>
                     
                 </div>
@@ -368,11 +382,11 @@ DOCTYPE写法-HTML4中
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2017/01/17/hello-world/">Hello World</a></h3>
+                    <h3><a href="/2017/03/09/Mac上mongobd 的使用/">Mac上mongobd 的使用</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2017-01-17T08:30:24.565Z" itemprop="datePublished">
-          2017-01-17
+      <time datetime="2017-03-09T01:33:15.000Z" itemprop="datePublished">
+          2017-03-09
       </time>
     
 </span>
@@ -381,13 +395,220 @@ DOCTYPE写法-HTML4中
                 <div class="col-md-8">
                     <p>
                       
-                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new p
+                        小知识点
+对MVC的理解
+
+MVC是一种软件开发模块化架构方式，适用于web开发的代码架构阻止模式；就是用来解耦视图和数据，利用c控制器去调度视图和模型数据的交互；
+提高代码的可维护性
+解耦了视图和数据的直接交互；
+视图数据和业务数据是完全分开的；
+视图数据：例如表单提交上来的数据；
+业务数据：真是的数据库中的数据； 
+
+
+增加代码的可重用性
+划分方式： 模块职责的单一；
+MVVM的核心：数据驱动视图
+
+
+mongod –dbpath 
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2017/01/17/hello-world/">Read More...</a>
+                        <a href="/2017/03/09/Mac上mongobd 的使用/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/03/08/cookie 和 session 的使用/">cookie 和 session 的使用</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-03-08T04:39:04.000Z" itemprop="datePublished">
+          2017-03-08
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        cookie 和 session 的使用cookie和session
+Cookie通过在客户端记录信息确定用户身份，Session通过在服务器端记录信息确定用户身份
+当 客户端第一次请求服务端时，会创建一个Session对象，所有该客户的状态信息都保存在这个Session对象里。服务端会创建一个sessionID，并将其保存在cookie中在cookie中名为sessionID:值；当再次发送请求时，服务器会先检查req中是否有sess
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/03/08/cookie 和 session 的使用/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/03/06/formidable插件使用/">formidable插件使用</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-03-06T00:50:15.000Z" itemprop="datePublished">
+          2017-03-06
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        formidable插件使用CommonJS
+JS中的模块化为AMD（requireJS）或 CMD
+在Node中，模块化成为CommonJS；
+require
+exports  是module.exports的别名
+module.exports
+
+require加载模块查找规则
+优先从缓存中进行加载
+如果一个模块被加载过以后，会直接被缓存起来，下次加载的时候直接从缓存中读取
+加载的是模块中 module.exports的值，而不是应用
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/03/06/formidable插件使用/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/02/12/博学谷项目 _四_/">常用的JS文件上传与表单插件</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-02-12T04:39:04.000Z" itemprop="datePublished">
+          2017-02-12
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        常用的JS文件上传与表单插件BFC
+BFC（格式化上下文）：BFC盒子是独立布局的，盒子内元素的布局不会影响盒子外面的元素。在同一个BFC中两个相邻的盒子在垂直方向上会发生margin垂直内边距塌陷的问题；
+BFC是指浏览器中创建来了一个独立的渲染区域，该区域内所有元素的布局不会影响到区域外元素的布局，这个渲染区域支队块级元素起作用；
+
+jS插件
+bootstrap
+jquery
+模块化开发：requirejs
+滚动下拉刷新，滚动加载：
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/02/12/博学谷项目 _四_/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/02/12/博学谷项目 _二_/">前端发送请求的方式</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-02-12T02:39:04.000Z" itemprop="datePublished">
+          2017-02-12
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        域名解析系统
+先去本机的host的文件查找对应的IP,如果在本机host文件中找到,就返回对应的IP;如果没有的话,就去公网查找,公网没有的话就无法上网;
+
+前端发送请求的方式
+地址栏直接输入URL
+表单的action属性
+a标签的href属性;link的href
+src属性:img的src;script的src; iframe的src
+ajax发送请求
+postMessage H5新的API
+flash插件
+location.href
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/02/12/博学谷项目 _二_/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/02/12/angular在实际应用中的优缺点/">Angular在实际应用中的优缺点</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-02-11T16:39:04.000Z" itemprop="datePublished">
+          2017-02-12
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        背景
+我们是在做创意摄影网时使用的Angular.js 的，
+优点：
+模板功能强大丰富，并且是声明式的，自带了丰富的Angular指令
+是一个比较完善的前端MV*框架，包含模板、数据双向绑定、路由、模块化、服务、过滤器和依赖注入等所有功能；
+自定义 Directive ，比jQuery插件还灵活；
+ng模块化比较大胆的引入了JAVA的一些东西(依赖注入)，能够很容易的写出可复用性的代码；
+Angular支持单元测试
+
+
+
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/02/12/angular在实际应用中的优缺点/">Read More...</a>
                     </p>
                     
                 </div>
@@ -398,7 +619,7 @@ Quick StartCreate a new p
         
         <nav class="pagination" role="pagination">
           
-          
+          <a class="pull-right" href="/page/2/">Older Posts →</a>
         </nav>
     </div>
 </section>

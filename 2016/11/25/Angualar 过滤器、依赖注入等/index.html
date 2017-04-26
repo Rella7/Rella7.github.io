@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>angualar 过滤器、依赖注入等 | Rella</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Rella">
+    <meta name="author" content="Rella">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Rella" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Angular/" class="animsition-link">Angular<small>(6)</small></a></li>
+				    
+				    <li><a href="/categories/Git/" class="animsition-link">Git<small>(3)</small></a></li>
+				    
+				    <li><a href="/categories/Gulp/" class="animsition-link">Gulp<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/JavaScript/" class="animsition-link">JavaScript<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Mac/" class="animsition-link">Mac<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Node/" class="animsition-link">Node<small>(5)</small></a></li>
+				    
+				    <li><a href="/categories/angular/" class="animsition-link">angular<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/canvas/" class="animsition-link">canvas<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/storage/" class="animsition-link">storage<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(2)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Rella</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-11-25T04:39:04.000Z" itemprop="datePublished">
+          2016-11-25
+      </time>
+    
+</span>
+                <h1>angualar 过滤器、依赖注入等</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="Angualar-过滤器、依赖注入等"><a href="#Angualar-过滤器、依赖注入等" class="headerlink" title="Angualar 过滤器、依赖注入等"></a>Angualar 过滤器、依赖注入等</h1><h2 id="小知识点"><a href="#小知识点" class="headerlink" title="小知识点"></a>小知识点</h2><ul>
+<li>触发脏值检测 <code>scope.$digest()</code>;监听视图中的数据改变；ng-click事件内部中自动封装了这个检测，也可以手动添加；</li>
+<li>form 表单有默认的submit事件，通过回车就可以触发；。form中如果有action，那么在submit之后，action也会重新发送一次请求，会刷新页面，所以，当使用submit提交数据时，可以将默认的action删除；</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">   <span class="tag">&lt;<span class="name">form</span> <span class="attr">ng-submit</span>=<span class="string">'show()'</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>todos<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"new-todo"</span> <span class="attr">ng-model</span>=<span class="string">'msg'</span> <span class="attr">placeholder</span>=<span class="string">"What needs to be done?"</span> <span class="attr">autofocus</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line">//angularJS通过ng-model将V与M进行绑定；</div><div class="line">//所以input中的value值就等于$scope.msg; 所以实际上$scope.msg = $('input').val();只不过这一步是AngularJS内部做的；</div><div class="line">//所以`$scope.msg=""`就直接将input的val值置空了；</div></pre></td></tr></table></figure>
+<ul>
+<li>AngularJS 遍历，获取当前元素的index值</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"todo-list"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"item in tabs "</span>&gt;</span>//item可以获取当前元素</div><div class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"view"</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">input</span> <span class="attr">ng-click</span>=<span class="string">"change($index)"</span> <span class="attr">class</span>=<span class="string">"toggle"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span> //$index 代表当前元素所对应的index值</div><div class="line">				<span class="tag">&lt;<span class="name">label</span>&gt;</span>《item.tab》<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">button</span>  <span class="attr">class</span>=<span class="string">"destroy"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>在angular中，涉及到通过判断而决定某个样式显示或隐藏时，尽量通过 ng-class=”{attr:flag}”来决定，不用再在js中进行if判断了；</li>
+</ul>
+<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><ul>
+<li>根作用于  <code>ng-app=&quot;App&quot;</code>所处的作用域</li>
+</ul>
+<h2 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h2><ul>
+<li>在AngularJS中使用过滤器格式化展示数据，在“《》”中使用”|”来调用过滤器，使用“：”传递参数；</li>
+<li>价格过滤器 <code>《price|currency:&#39;￥&#39;：1》</code>;冒号后面是传参数，多个参数多个冒号链接，：1表示表刘一个小数；</li>
+<li>时间过滤器 <code>《now | date:&quot;yyyy-MM-dd hh:mm:ss&quot;》</code></li>
+<li>控制排序方向 <code>《list | orderBy:&quot;score&quot;:&quot;true&quot;》</code>  true为反向排序，false为正向排序，默认为false；</li>
+<li>常用内置过滤器</li>
+<li><img src="media/14904890310833/14905800642259.jpg" alt=""></li>
+</ul>
+<h2 id="依赖注入"><a href="#依赖注入" class="headerlink" title="依赖注入"></a>依赖注入</h2><ul>
+<li>采用 ‘注入’ 的方式可以解决开发过程中的依赖的关系，成为依赖注入；</li>
+<li>一般 注入是通过 ‘参数’ 的形式实现的；</li>
+<li><code>$http</code> 同 <code>$scope</code> 一样，也是AngularJS内置的功能。可以提供发送异步请求的功能；</li>
+</ul>
+<h2 id="服务（重点）"><a href="#服务（重点）" class="headerlink" title="服务（重点）"></a>服务（重点）</h2><ul>
+<li><code>$</code>AngularJS内置的服务；<code>ng-</code> AngularJS 内置的指令；</li>
+<li>常见的内置服务：需要在依赖中写入，然后才可以使用<ul>
+<li>$scope</li>
+<li>$interval</li>
+<li>$timeout</li>
+<li>$log</li>
+<li>$http</li>
+</ul>
+</li>
+</ul>
+<h3 id="log-服务-调试信息的输出"><a href="#log-服务-调试信息的输出" class="headerlink" title="$log 服务 调试信息的输出"></a>$log 服务 调试信息的输出</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$log.error(<span class="string">'这是一个错误'</span>);</div><div class="line">$log.warn(<span class="string">'这个一个警告'</span>);</div><div class="line">$log.log(<span class="string">'这是一个console.log'</span>);</div><div class="line">$log.debug(<span class="string">'这是一个调试'</span>);</div><div class="line">$log.info(<span class="string">'这是一个普通内容'</span>);</div></pre></td></tr></table></figure>
+<h3 id="timeout和-interval"><a href="#timeout和-interval" class="headerlink" title="$timeout和 $interval"></a><code>$timeout</code>和 <code>$interval</code></h3><ul>
+<li>$timeout 服务，延时显示数据，$interval 服务：计时器</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"> App.controller(<span class="string">'DemoCtrl'</span>,[<span class="string">'$timeout'</span>,<span class="string">'$log'</span>,<span class="string">'$interval'</span>,<span class="function"><span class="keyword">function</span> (<span class="params">$timeout,$log,$interval</span>) </span>&#123;</div><div class="line">    <span class="comment">//$timeout是一个函数</span></div><div class="line">    <span class="comment">//延时3秒后显示内容;</span></div><div class="line">    $timeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        $log.info(<span class="string">'我哈哈哈,我等了3秒'</span>)</div><div class="line">    &#125;,<span class="number">3000</span>);</div><div class="line"></div><div class="line">    <span class="keyword">var</span> i = <span class="number">0</span>;</div><div class="line">    $interval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        $log.info(i++);</div><div class="line">    &#125;,<span class="number">1000</span>)</div><div class="line">&#125;])</div></pre></td></tr></table></figure>
+<h3 id="http-专门发起异步请求"><a href="#http-专门发起异步请求" class="headerlink" title="$http 专门发起异步请求"></a>$http 专门发起异步请求</h3><ul>
+<li>2、在PHP中 $_POST 是专门接收 formData格式数据的，即“Content-Type:application/x-www-form-urlencoded”;  但是不能接收 Content-Type：application/json; </li>
+<li>3、当headers为“Content-Type:application/x-www-form-urlencoded”时，上传的data格式为 <code>data:&quot;name=itcast&amp;age=11&quot;</code>; </li>
+<li>4、当headers为<code>“Content-Type:application/json”</code>时，传递的参数格式为：<code>data:{&quot;name&quot;:&quot;itcast&quot;,&quot;name&quot;:18}</code>;</li>
+</ul>
+<h4 id="AngularJS-http总结"><a href="#AngularJS-http总结" class="headerlink" title="AngularJS $http总结"></a>AngularJS $http总结</h4><ol>
+<li>$http发送请求的方式有3种：method：“get”/“post”/‘jsonp’;</li>
+<li>参数的传递方式为：params:</li>
+</ol>
+<h5 id="get方式请求"><a href="#get方式请求" class="headerlink" title="get方式请求"></a>get方式请求</h5><ul>
+<li>“get”方式发送请求时，正常发送；参数以params:{name:’lisi’,age:18}发送;<ul>
+<li>不管以什么方式传递参数，内部都会转换成 ？name=lisi&amp;age=18的形式</li>
+<li>在PHP中将传入的参数以json对象的形式输出</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">    $http(&#123;</div><div class="line">      <span class="attr">url</span>:<span class="string">'./example.php'</span>,</div><div class="line">      <span class="attr">method</span>:<span class="string">'get'</span>,</div><div class="line">      <span class="attr">params</span>:&#123;<span class="attr">name</span>:<span class="string">'lisi'</span>,<span class="attr">age</span>:<span class="number">18</span>&#125;,</div><div class="line">      </div><div class="line">  &#125;).success(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(data);</div><div class="line">  &#125;)</div><div class="line"><span class="comment">//在PHP中代码：</span></div><div class="line">$name = $_GET[<span class="string">'name'</span>];</div><div class="line">$age = $_GET[<span class="string">'age'</span>];</div><div class="line">$array = [<span class="string">'name'</span>=&gt;$name,<span class="string">'age'</span>=&gt;$age];</div><div class="line"><span class="comment">//var_dump($array);</span></div><div class="line"><span class="comment">//将传递的参数放到数组中,并将数组转换成json对象格式进行输出;</span></div><div class="line">echo json_encode($array);</div><div class="line"><span class="comment">//结果为：&#123;name: "lisi", age: "18"&#125;</span></div></pre></td></tr></table></figure>
+<h5 id="post方式请求"><a href="#post方式请求" class="headerlink" title="post方式请求"></a>post方式请求</h5><ul>
+<li><p>“post”请求，需要注意两点</p>
+<ol>
+<li>设置请求头：headers:“Content-Type:application/x-www-form-urlencoded”；</li>
+<li><p>参数以data传递form data，data：“name=lisi&amp;age=17”；请求头与参数必须保持一致；</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//post请求</span></div><div class="line">$http(&#123;</div><div class="line">    <span class="attr">url</span>: <span class="string">'./example.php'</span>,</div><div class="line">    <span class="attr">method</span>: <span class="string">'post'</span>,</div><div class="line">    <span class="attr">data</span>: <span class="string">'name=lisi&amp;age=17'</span>,</div><div class="line">    <span class="attr">headers</span>: &#123;</div><div class="line">        <span class="string">'Content-Type'</span>: <span class="string">'application/x-www-form-urlencoded'</span></div><div class="line">    &#125;</div><div class="line">&#125;).success(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(data);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+<h5 id="JSONP-的原理"><a href="#JSONP-的原理" class="headerlink" title="JSONP 的原理"></a>JSONP 的原理</h5><blockquote>
+<p>前端传递一个实现定义好的函数名，给服务端，然后服务端接收这个函数名并拼凑一个“（）”，并返回，前端就接收到了 这个函数的调用；<br>在jQuery中，我们不写callback的明细，ajax会自动帮我们生成一个，jQuery+序列号+时间戳等；但是在angularJS中，他们有帮我们封装，所以必须手动加上；</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$http(&#123;</div><div class="line">        <span class="attr">url</span>:<span class="string">'./example.php'</span>,</div><div class="line">        <span class="attr">method</span>:<span class="string">'jsonp'</span>,</div><div class="line">        <span class="attr">params</span>:&#123;</div><div class="line">            <span class="comment">//callback必须用'JSON_CALLBACK'进行占位，后端返回回调函数：angular.callbacks._0(lisi)；这个回调函数的结果就是success时的data数据；</span></div><div class="line">            callback:<span class="string">'JSON_CALLBACK'</span>,</div><div class="line">            <span class="attr">name</span>:<span class="string">'lisi'</span>,</div><div class="line">            <span class="attr">age</span>:<span class="number">17</span></div><div class="line">        &#125;</div><div class="line">    &#125;).success(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(data);</div><div class="line">    &#125;)</div></pre></td></tr></table></figure>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/12/08/Angular 自定义模块以及路由的配置/" style="float: left;">
+        ← Angular 自定义模块以及路由的配置
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/11/10/Angular入门/">
+        Angular入门 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Rella. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
